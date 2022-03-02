@@ -6,6 +6,7 @@ const StyledTitle = styled.div<{
   size: FontSize;
   color: string;
 }>`
+  margin: 0;
   font-size: ${({ theme, size, primary = false }) =>
     primary ? "5rem" : theme.font[size]};
   color: ${({ color }) => color};
