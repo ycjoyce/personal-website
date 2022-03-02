@@ -8,12 +8,21 @@ export interface ArrowProps {
   direction?: Direction;
   length?: string;
   color?: string;
+  animate?: boolean;
 }
 
 const Arrow: FC<ArrowProps> = ({
   direction = "left",
   length = "100px",
   color = theme.color.black,
-}) => <StyledArrow direction={direction} length={length} color={color} />;
+  animate = false,
+}) => (
+  <StyledArrow
+    animate={animate}
+    direction={direction}
+    length={length}
+    color={color}
+  />
+);
 
 export default Arrow;
