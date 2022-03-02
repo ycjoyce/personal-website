@@ -163,7 +163,7 @@ const CoverSection: FC<CoverSectionProps> = () => {
           color={theme.color.dark}
           length="80px"
         />
-        <p>scroll</p>
+        <p>SCROLL</p>
       </StyledArrowBox>
     </StyledCoverSection>
   );

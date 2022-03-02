@@ -9,6 +9,7 @@ export interface TitleProps {
   size?: FontSize;
   color?: string;
   children: string;
+  primary?: boolean;
 }
 
 const Title: FC<TitleProps> = ({
@@ -16,9 +17,10 @@ const Title: FC<TitleProps> = ({
   size = level,
   color = theme.color.black,
   children,
+  primary = false,
 }) => {
   return (
-    <StyledTitle as={`h${level}`} size={size} color={color}>
+    <StyledTitle as={`h${level}`} primary={primary} size={size} color={color}>
       {children}
     </StyledTitle>
   );

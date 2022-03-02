@@ -2,7 +2,7 @@ import { Story } from "@storybook/react/types-6-0";
 import AboutSection, { AboutSectionProps } from "./AboutSection";
 
 export default {
-  title: "AboutSection",
+  title: "Sections/AboutSection",
   component: AboutSection,
 };
 
