@@ -10,41 +10,19 @@ interface StyledProjectProps {
   onClick: (id: string) => void;
 }
 
-export const StyledImageBox = styled.div<{ more: boolean; primary: boolean }>`
+export const StyledViewMore = styled.div`
+  font-size: ${({ theme }) => theme.font["6"]};
+`;
+
+export const StyledImageBox = styled.div`
   position: relative;
   overflow: hidden;
+  font-size: 0;
 
   & img {
     width: 100%;
     transition: filter 0.5s;
   }
-
-  ${({ more, primary }) => {
-    if (more && primary) {
-      return css`
-        &:hover {
-          border: 3px solid red;
-          & ${StyledViewMore} {
-            top: 50%;
-          }
-          & img {
-            filter: blur(5px);
-          }
-        }
-      `;
-    }
-    return css`
-      &:hover {
-        border: 3px solid blue;
-        & ${StyledViewMore} {
-          opacity: 1;
-        }
-        & img {
-          filter: blur(15px);
-        }
-      }
-    `;
-  }}
 `;
 
 export const StyledIntroBox = styled.div`
@@ -55,20 +33,43 @@ export const StyledIntroBox = styled.div`
   }
 `;
 
-export const StyledViewMore = styled.div``;
+export const StyledParagraph = styled.p`
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+`;
+
+export const StyledSkillBox = styled.div`
+  margin: -5px;
+
+  & ${StyledSkill} {
+    margin: 5px;
+  }
+`;
 
 const StyledProject = styled.div<StyledProjectProps>`
-  border: 1px solid red;
-
   ${({ primary, theme }) => {
     if (primary) {
       return css`
-        display: flex;
+        & {
+          display: flex;
+        }
 
         & ${StyledImageBox} {
           flex-grow: 1;
           flex-shrink: 1;
           margin-right: 30px;
+
+          &:hover {
+            & ${StyledViewMore} {
+              top: 50%;
+            }
+            & img {
+              filter: blur(5px);
+            }
+          }
         }
 
         & ${StyledViewMore} {
@@ -88,6 +89,15 @@ const StyledProject = styled.div<StyledProjectProps>`
     }
 
     return css`
+      & {
+        box-shadow: 0 0 10px ${({ theme }) => theme.color.light};
+        transition: box-shadow 0.3s;
+      }
+
+      &:hover {
+        box-shadow: 0 0 15px ${({ theme }) => theme.color.light};
+      }
+
       & ${StyledIntroBox} {
         padding: 30px;
       }
@@ -126,6 +136,9 @@ const StyledProject = styled.div<StyledProjectProps>`
           left: 50%;
           transform: translate(-50%, -50%);
           color: #fff;
+          width: 100%;
+          padding: 0 20px;
+          text-align: center;
         }
 
         & ${StyledViewMore} {
@@ -140,26 +153,17 @@ const StyledProject = styled.div<StyledProjectProps>`
           line-height: 50px;
           text-align: center;
           opacity: 0;
+          transition: opacity 0.3s;
+        }
+
+        &:hover {
+          & ${StyledViewMore} {
+            opacity: 1;
+          }
         }
       }
     `;
   }}
-`;
-
-export const StyledParagraph = styled.p`
-  margin: 0;
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
-`;
-
-export const StyledSkillBox = styled.div`
-  margin: -5px;
-
-  & ${StyledSkill} {
-    margin: 5px;
-  }
 `;
 
 export default StyledProject;

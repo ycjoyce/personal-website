@@ -47,7 +47,7 @@ const Project: FC<ProjectProps> = ({
       primary={primary}
       onClick={handleClick}
     >
-      <StyledImageBox more={more} primary={primary}>
+      <StyledImageBox>
         <img src={cover} alt={title} />
 
         {!primary && (
