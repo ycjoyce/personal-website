@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import StyledPill from "../Pill/Pill.style";
 
-const StyledSkill = styled(StyledPill)``;
+const StyledSkill = styled.div`
+  display: inline-block;
+`;
 
 export default StyledSkill;

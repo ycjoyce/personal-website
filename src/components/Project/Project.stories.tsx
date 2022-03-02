@@ -30,16 +30,15 @@ More.args = {
   more: true,
 };
 
-export const WithClickHandler = Template.bind({});
-WithClickHandler.args = {
-  ...defaultArgs,
-  onClick(id) {
-    console.log(id);
-  },
-};
-
 export const Primary = Template.bind({});
 Primary.args = {
   ...defaultArgs,
   primary: true,
+};
+
+export const PrimaryMore = Template.bind({});
+PrimaryMore.args = {
+  ...defaultArgs,
+  primary: true,
+  more: true,
 };

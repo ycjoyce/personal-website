@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import theme from "../../styles/abstracts/theme";
 import StyledSkill from "./Skill.style";
 
 export const SkillItem = {
@@ -26,7 +25,7 @@ export interface SkillProps {
 }
 
 const Skill: FC<SkillProps> = ({ title }) => (
-  <StyledSkill color="">{SkillItem[title]}</StyledSkill>
+  <StyledSkill color=""># {SkillItem[title]}</StyledSkill>
 );
 
 export default Skill;

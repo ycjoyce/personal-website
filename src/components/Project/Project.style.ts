@@ -50,7 +50,7 @@ export const StyledSkillBox = styled.div`
 `;
 
 const StyledProject = styled.div<StyledProjectProps>`
-  ${({ primary, theme }) => {
+  ${({ primary, more, theme }) => {
     if (primary) {
       return css`
         & {
@@ -62,14 +62,15 @@ const StyledProject = styled.div<StyledProjectProps>`
           flex-shrink: 1;
           margin-right: 30px;
 
-          &:hover {
-            & ${StyledViewMore} {
-              top: 50%;
-            }
-            & img {
-              filter: blur(5px);
-            }
-          }
+          ${more &&
+          `&:hover {
+              & ${StyledViewMore} {
+                top: 50%;
+              }
+              & img {
+                filter: blur(5px);
+              }
+            }`}
         }
 
         & ${StyledViewMore} {
@@ -156,11 +157,14 @@ const StyledProject = styled.div<StyledProjectProps>`
           transition: opacity 0.3s;
         }
 
-        &:hover {
-          & ${StyledViewMore} {
-            opacity: 1;
+        ${more &&
+        `
+          &:hover {
+            & ${StyledViewMore} {
+              opacity: 1;
+            }
           }
-        }
+          `}
       }
     `;
   }}
