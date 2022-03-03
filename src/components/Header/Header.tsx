@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import Hamburger from "../Hamburger/Hamburger";
 import StyledHeader, { StyledOperateBox } from "./Header.style";
 import Blotter from "../Blotter/Blotter";
+import Menu from "../Menu/Menu";
 
 export interface HeaderProps {
   menuOpened?: boolean;
@@ -19,15 +20,25 @@ const Header: FC<HeaderProps> = ({
       <Blotter text="Jc" fontSize={40}></Blotter>
 
       <StyledOperateBox>
-        {/* <Button outline size="sm">
+        <Button outline size="sm" color={theme.color.emphasize}>
           resume
-        </Button> */}
+        </Button>
         <Hamburger
           opened={menuOpened}
           color={theme.color.emphasize}
           onClick={onHamburgerClick}
         />
       </StyledOperateBox>
+
+      {menuOpened && (
+        <Menu
+          items={[
+            { title: "About", onClick() {} },
+            { title: "Projects", onClick() {} },
+            { title: "Experience", onClick() {} },
+          ]}
+        />
+      )}
     </StyledHeader>
   );
 };

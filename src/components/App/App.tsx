@@ -1,16 +1,30 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import AboutSection from "../AboutSection/AboutSection";
 import CoverSection from "../CoverSection/CoverSection";
 import Header from "../Header/Header";
 import ProjectsSection from "../ProjectSection/ProjectSection";
+import ExperienceSection from "../ExperienceSection/ExperienceSection";
+import StyledApp, { StyledWrapper } from "./App.style";
 
-const App: FC = () => (
-  <div>
-    <Header />
-    <CoverSection />
-    <AboutSection />
-    <ProjectsSection />
-  </div>
-);
+const App: FC = () => {
+  const [menuOpened, setMenuOpened] = useState(false);
+
+  const handleHamburgerClick = () => {
+    setMenuOpened((o) => !o);
+  };
+
+  return (
+    <StyledApp>
+      <Header menuOpened={menuOpened} onHamburgerClick={handleHamburgerClick} />
+      <CoverSection />
+
+      <StyledWrapper>
+        <AboutSection />
+        <ProjectsSection />
+        <ExperienceSection />
+      </StyledWrapper>
+    </StyledApp>
+  );
+};
 
 export default App;
