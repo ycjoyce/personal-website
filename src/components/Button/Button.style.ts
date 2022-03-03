@@ -34,7 +34,8 @@ const StyledButton = styled.button<ButtonProps>`
 
   &:hover {
     background-color: ${({ color }) => color};
-    color: #fff;
+    color: ${({ color = "#fff", theme }) =>
+      colord(color).isLight() ? theme.color.black : "#fff"};
     box-shadow: inset 0 0 0
         ${({ color }) => colord(color!).alpha(0.5).toRgbString()},
       0 0 1.5em ${({ color }) => colord(color!).alpha(0.7).toRgbString()};

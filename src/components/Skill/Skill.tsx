@@ -22,10 +22,11 @@ export const SkillItem = {
 
 export interface SkillProps {
   title: keyof typeof SkillItem;
+  color?: string;
 }
 
-const Skill: FC<SkillProps> = ({ title }) => (
-  <StyledSkill color=""># {SkillItem[title]}</StyledSkill>
+const Skill: FC<SkillProps> = ({ title, color = "transparent" }) => (
+  <StyledSkill color={color}># {SkillItem[title]}</StyledSkill>
 );
 
 export default Skill;

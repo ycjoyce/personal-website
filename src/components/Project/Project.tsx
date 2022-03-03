@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Button from "../Button/Button";
 import Skill, { SkillProps } from "../Skill/Skill";
 import Title from "../Title/Title";
 import StyledProject, {
@@ -7,6 +8,7 @@ import StyledProject, {
   StyledParagraph,
   StyledSkillBox,
   StyledViewMore,
+  StyledYear,
 } from "./Project.style";
 
 export interface ProjectProps {
@@ -33,7 +35,13 @@ const Project: FC<ProjectProps> = ({
   onClick = () => {},
 }) => {
   const renderSkills = (skills: SkillProps["title"][]) => {
-    return skills.map((skill) => <Skill title={skill} key={skill} />);
+    return skills.map((skill) => (
+      <Skill
+        title={skill}
+        color={primary ? "rgba(255,255,255,0.7)" : "#eee"}
+        key={skill}
+      />
+    ));
   };
 
   const handleClick = () => {
@@ -47,16 +55,20 @@ const Project: FC<ProjectProps> = ({
       primary={primary}
       onClick={handleClick}
     >
+      {primary && <StyledYear>{year}</StyledYear>}
+
       <StyledImageBox>
         <img src={cover} alt={title} />
 
         {!primary && (
-          <Title level={3} size={3}>
-            {title}
-          </Title>
+          <>
+            <StyledYear>{year}</StyledYear>
+            <Title level={3} size={3}>
+              {title}
+            </Title>
+            {more && <StyledViewMore>View More</StyledViewMore>}
+          </>
         )}
-
-        {more && <StyledViewMore>View More</StyledViewMore>}
       </StyledImageBox>
 
       <StyledIntroBox>
@@ -73,6 +85,12 @@ const Project: FC<ProjectProps> = ({
         </div>
 
         <StyledSkillBox>{renderSkills(skills)}</StyledSkillBox>
+
+        {primary && more && (
+          <Button color="#fff" outline>
+            View More
+          </Button>
+        )}
       </StyledIntroBox>
     </StyledProject>
   );

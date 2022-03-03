@@ -13,7 +13,7 @@ export interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({
-  color = theme.color.primary,
+  color = "#fff",
   outline = false,
   size = "md",
   children,

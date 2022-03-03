@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import theme from "../../styles/abstracts/theme";
 import StyledPill from "./Pill.style";
 
 export interface PillProps {
@@ -7,7 +6,7 @@ export interface PillProps {
   children: string;
 }
 
-const Pill: FC<PillProps> = ({ color = theme.color.primary, children }) => (
+const Pill: FC<PillProps> = ({ color = "transparent", children }) => (
   <StyledPill color={color}>{children}</StyledPill>
 );
 

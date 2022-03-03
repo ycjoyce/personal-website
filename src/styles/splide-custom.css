@@ -1,0 +1,93 @@
+.splide__slide {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.my-slider-progress-box {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.my-slider-progress {
+  background: #ccc;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.my-slider-progress-bar {
+  background: greenyellow;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+
+.my-slider-progress-years {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.splide {
+  position: relative;
+}
+
+.splide__pagination--custom {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.splide__pagination__page {
+  border-radius: 0;
+  background: #fff;
+  opacity: 1;
+}
+
+.splide__pagination__page.is-active {
+  background: greenyellow;
+}
+
+.primary-arrows .splide__arrow {
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  color: #fff;
+  padding: 20px 5px;
+  font-size: 1rem;
+}
+
+.primary-arrows .splide__arrow svg {
+  fill: #fff;
+}
+
+.primary-arrows .splide__arrow--prev {
+  left: 0.5em;
+}
+
+.primary-arrows .splide__arrow--next {
+  right: 0.5em;
+}
+
+.secondary-arrows .splide__arrow svg{
+  fill: greenyellow;
+  width: 2em;
+  height: 2em;
+}
+
+.secondary-arrows .splide__arrow {
+  background: transparent;
+}
+
+.secondary-arrows .splide__arrow--prev {
+  left: -1.5em;
+}
+
+.secondary-arrows .splide__arrow--next {
+  right: -1.5em;
+}
