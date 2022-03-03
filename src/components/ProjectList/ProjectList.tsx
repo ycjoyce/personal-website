@@ -5,13 +5,13 @@ import Slider from "../Slider/Slider";
 
 export interface ProjectListProps {
   children: ReactNode[];
-  options: SplideProps["options"];
+  options?: SplideProps["options"];
   progress?: boolean;
 }
 
 const ProjectList: FC<ProjectListProps> = ({
   children,
-  options,
+  options = {},
   progress = false,
 }) => {
   const { updateBar, Progress, maxYear, minYear } = useProgressBar(
