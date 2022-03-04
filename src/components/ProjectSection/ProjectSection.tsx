@@ -2,8 +2,8 @@ import React, { FC, useState } from "react";
 import ProjectList from "../ProjectList/ProjectList";
 import Project, { ProjectProps } from "../Project/Project";
 import Title from "../Title/Title";
-import LightBox from "../LightBox/LightBox";
-import { Item } from "../VideoSlider/VideoSlider";
+import LightBox from "../Lightbox/Lightbox";
+import { VideoSlideItemProps } from "../VideoSlideItem/VideoSlideItem";
 
 export interface ProjectSectionProps {
   main: ProjectProps[];
@@ -11,7 +11,7 @@ export interface ProjectSectionProps {
 }
 
 const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
-  const [lightBoxItems, setLightBoxItems] = useState<Item[]>([]);
+  const [lightBoxItems, setLightBoxItems] = useState<VideoSlideItemProps[]>([]);
 
   const handleMainClick = () => {};
 

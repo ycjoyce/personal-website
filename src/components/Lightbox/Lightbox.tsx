@@ -2,17 +2,17 @@ import React, { FC, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { ThumbnailSliderProps } from "../ThumbnailSlider/ThumbnailSlider";
 import StyledModal, {
-  StyledModalContent,
   StyledModalBackground,
-} from "./LightBox.style";
+  StyledModalContent,
+} from "./Lightbox.style";
 import ThumbnailSlider from "../ThumbnailSlider/ThumbnailSlider";
 
-export interface LightBoxProps extends ThumbnailSliderProps {
+export interface LightboxProps extends ThumbnailSliderProps {
   root?: string;
   onClose?: () => void;
 }
 
-const LightBox: FC<LightBoxProps> = ({ root, onClose = () => {}, items }) => {
+const Lightbox: FC<LightboxProps> = ({ root, onClose = () => {}, items }) => {
   const modalRoot = useRef(document.getElementById(root || "modal-root"));
   const el = useRef(document.createElement("div"));
 
@@ -51,4 +51,4 @@ const LightBox: FC<LightBoxProps> = ({ root, onClose = () => {}, items }) => {
   return modalComponent;
 };
 
-export default LightBox;
+export default Lightbox;

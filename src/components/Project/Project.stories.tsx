@@ -27,7 +27,7 @@ Default.args = {
 export const More = Template.bind({});
 More.args = {
   ...defaultArgs,
-  more: true,
+  more: [],
 };
 
 export const Primary = Template.bind({});
@@ -41,5 +41,5 @@ export const PrimaryMore = Template.bind({});
 PrimaryMore.args = {
   ...defaultArgs,
   primary: true,
-  more: true,
+  more: [],
 };

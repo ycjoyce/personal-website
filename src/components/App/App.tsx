@@ -20,7 +20,7 @@ const App: FC = () => {
 
       <StyledWrapper>
         <AboutSection />
-        <ProjectsSection />
+        <ProjectsSection main={[]} sub={[]} />
         <ExperienceSection />
       </StyledWrapper>
     </StyledApp>

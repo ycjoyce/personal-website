@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Button from "../Button/Button";
 import Skill, { SkillProps } from "../Skill/Skill";
 import Title from "../Title/Title";
-import { Item } from "../VideoSlider/VideoSlider";
+import { VideoSlideItemProps } from "../VideoSlideItem/VideoSlideItem";
 import StyledProject, {
   StyledImageBox,
   StyledIntroBox,
@@ -19,7 +19,7 @@ export interface ProjectProps {
   intro: string;
   cover: string;
   skills: SkillProps["title"][];
-  more?: Item[];
+  more?: VideoSlideItemProps[];
   primary?: boolean;
   onClick?: (id: string) => void;
 }

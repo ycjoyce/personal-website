@@ -1,11 +1,11 @@
 import React, { FC, useRef, useEffect, useMemo } from "react";
 import { Splide } from "@splidejs/react-splide";
-import { Item } from "../VideoSlider/VideoSlider";
+import { VideoSlideItemProps } from "../VideoSlideItem/VideoSlideItem";
 import VideoSlider from "../VideoSlider/VideoSlider";
 import Slider from "../Slider/Slider";
 
 export interface ThumbnailSliderProps {
-  items: Item[];
+  items: VideoSlideItemProps[];
 }
 
 const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ items }) => {

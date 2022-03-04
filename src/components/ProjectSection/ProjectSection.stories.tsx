@@ -57,20 +57,20 @@ Default.args = {
       more: [
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
@@ -91,20 +91,20 @@ Default.args = {
       more: [
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
@@ -125,20 +125,20 @@ Default.args = {
       more: [
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
@@ -159,20 +159,20 @@ Default.args = {
       more: [
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
@@ -193,20 +193,20 @@ Default.args = {
       more: [
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
@@ -227,20 +227,20 @@ Default.args = {
       more: [
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
           id: uuidv4(),
-          video: "html-video",
-          src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          video:
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
           preview: "https://picsum.photos/300/200",
         },
         {
