@@ -25,7 +25,7 @@ const Header: FC<HeaderProps> = ({
         </Button>
         <Hamburger
           opened={menuOpened}
-          color={theme.color.emphasize}
+          color={menuOpened ? "#fff" : theme.color.emphasize}
           onClick={onHamburgerClick}
         />
       </StyledOperateBox>

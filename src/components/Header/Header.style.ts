@@ -8,6 +8,7 @@ const StyledHeader = styled.header`
   align-items: center;
   background-image: linear-gradient(to bottom, #fff, transparent);
   padding: 20px;
+  z-index: 5;
 `;
 
 export const StyledOperateBox = styled.div`
@@ -20,6 +21,7 @@ export const StyledOperateBox = styled.div`
 
   & ${StyledHamburger} {
     padding: 0;
+    z-index: 5;
   }
 `;
 

@@ -1,22 +1,25 @@
 import React, { FC } from "react";
+import Arrow from "../Arrow/Arrow";
+import StyledMenu, { StyledMenuList, StyledMenuItem } from "./Menu.style";
 
 export interface MenuProps {
-  items: { title: string; onClick(): void }[];
+  items: { title: string; onClick(title: string): void }[];
 }
 
 const Menu: FC<MenuProps> = ({ items }) => {
   const renderItems = (items: MenuProps["items"]) => {
     return items.map(({ title, onClick }) => (
-      <li key={title} onClick={onClick}>
+      <StyledMenuItem key={title} onClick={() => onClick(title)}>
         {title}
-      </li>
+        <Arrow direction="right" color="#fff" length={"50px"} />
+      </StyledMenuItem>
     ));
   };
 
   return (
-    <div>
-      <ul>{renderItems(items)}</ul>
-    </div>
+    <StyledMenu>
+      <StyledMenuList>{renderItems(items)}</StyledMenuList>
+    </StyledMenu>
   );
 };
 

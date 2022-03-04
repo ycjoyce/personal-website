@@ -11,12 +11,10 @@ export const StyledModalBackground = styled.div`
 `;
 
 export const StyledModalContent = styled.div`
-  background-color: #fff;
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 50%;
-  max-width: 600px;
+  width: 90%;
   padding: 50px;
   border-radius: 5px;
   transform: translate(-50%, -50%);

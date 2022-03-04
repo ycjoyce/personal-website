@@ -1,13 +1,15 @@
 import { Story } from "@storybook/react/types-6-0";
 import { v4 as uuidv4 } from "uuid";
-import LightBox, { LightBoxProps } from "./LightBox";
+import ThumbnailSlider, { ThumbnailSliderProps } from "./ThumbnailSlider";
 
 export default {
-  title: "LightBox",
-  component: LightBox,
+  title: "ThumbnailSlider",
+  component: ThumbnailSlider,
 };
 
-const Template: Story<LightBoxProps> = (args) => <LightBox {...args} />;
+const Template: Story<ThumbnailSliderProps> = (args) => (
+  <ThumbnailSlider {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

@@ -1,15 +1,59 @@
-import React, { FC, ReactNode } from "react";
-import Modal from "../Modal/Modal";
-import Slider from "../Slider/Slider";
+import React, { FC, useRef, useEffect } from "react";
+import { createPortal } from "react-dom";
+import { ThumbnailSliderProps } from "../ThumbnailSlider/ThumbnailSlider";
+import StyledModal, {
+  StyledModalContent,
+  StyledModalBackground,
+} from "./LightBox.style";
+import ThumbnailSlider from "../ThumbnailSlider/ThumbnailSlider";
 
-export interface LightboxProps {
-  children: ReactNode[];
+export interface LightBoxProps extends ThumbnailSliderProps {
+  root?: string;
+  onClose?: () => void;
 }
 
-const Lightbox: FC<LightboxProps> = ({ children }) => (
-  <Modal>
-    <Slider>{children}</Slider>
-  </Modal>
-);
+const LightBox: FC<LightBoxProps> = ({
+  root,
+  onClose = () => {},
+  main,
+  thumbs,
+}) => {
+  const modalRoot = useRef(document.getElementById(root || "modal-root"));
+  const el = useRef(document.createElement("div"));
 
-export default Lightbox;
+  useEffect(() => {
+    const rootElement = modalRoot.current;
+
+    if (!rootElement) {
+      return;
+    }
+
+    const element = el.current;
+    rootElement.appendChild(element);
+
+    return () => {
+      rootElement?.removeChild(element);
+    };
+  }, []);
+
+  const handleClickOutside = () => {
+    onClose();
+  };
+
+  const modalComponent = (
+    <StyledModal>
+      <StyledModalBackground onClick={handleClickOutside} />
+      <StyledModalContent>
+        <ThumbnailSlider main={main} thumbs={thumbs} />
+      </StyledModalContent>
+    </StyledModal>
+  );
+
+  if (root) {
+    return createPortal(modalComponent, el.current);
+  }
+
+  return modalComponent;
+};
+
+export default LightBox;
