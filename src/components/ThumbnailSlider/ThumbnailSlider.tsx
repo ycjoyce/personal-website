@@ -5,15 +5,10 @@ import VideoSlider from "../VideoSlider/VideoSlider";
 import Slider from "../Slider/Slider";
 
 export interface ThumbnailSliderProps {
-  main: {
-    items: Item[];
-  };
-  thumbs: {
-    items: { id: string; preview: string }[];
-  };
+  items: Item[];
 }
 
-const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ main, thumbs }) => {
+const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ items }) => {
   const mainRef = useRef<Splide>(null);
   const thumbnailRef = useRef<Splide>(null);
 
@@ -27,12 +22,7 @@ const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ main, thumbs }) => {
     }
   }, []);
 
-  const renderImages = (
-    type: keyof ThumbnailSliderProps,
-    items:
-      | ThumbnailSliderProps["main"]["items"]
-      | ThumbnailSliderProps["thumbs"]["items"]
-  ) => {
+  const renderImages = (items: ThumbnailSliderProps["items"]) => {
     return items.map(({ preview, id }, i) => (
       <img src={preview} alt="" key={id} />
     ));
@@ -52,6 +42,7 @@ const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ main, thumbs }) => {
         autoplay: true,
         mute: true,
       },
+      destroy: true,
     }),
     []
   );
@@ -69,22 +60,47 @@ const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ main, thumbs }) => {
       classes: {
         arrows: "splide__arrows secondary-arrows",
       },
+      destroy: true,
     }),
     []
   );
 
+  useEffect(() => {
+    const mainEl = mainRef.current;
+    const thumbEl = thumbnailRef.current;
+
+    return () => {
+      // mainEl?.splide?.destroy();
+      // thumbEl?.splide?.destroy();
+      console.log("銷毀thumbnailslider");
+    };
+  }, []);
+
   return (
     <div>
-      {main.items.find((e) => e.video) ? (
-        <VideoSlider ref={mainRef} options={mainOptions} items={main.items} />
+      {items.find((e) => e.video) ? (
+        <VideoSlider
+          ref={mainRef}
+          options={mainOptions}
+          items={items}
+          onDestroy={() => console.log("destroy main video slider")}
+        />
       ) : (
-        <Slider ref={mainRef} options={mainOptions}>
-          {renderImages("main", main.items)}
+        <Slider
+          ref={mainRef}
+          options={mainOptions}
+          onDestroy={() => console.log("destroy main image slider")}
+        >
+          {renderImages(items)}
         </Slider>
       )}
 
-      <Slider ref={thumbnailRef} options={thumbsOptions}>
-        {renderImages("thumbs", thumbs.items)}
+      <Slider
+        ref={thumbnailRef}
+        options={thumbsOptions}
+        onDestroy={() => console.log("destroy sub image slider")}
+      >
+        {renderImages(items)}
       </Slider>
     </div>
   );

@@ -1,51 +1,50 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef } from "react";
 import { Splide, SplideProps } from "@splidejs/react-splide";
-import { Video } from "@splidejs/splide-extension-video";
-import "@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css";
-
-export interface Item {
-  id: string;
-  video?: "youtube" | "vimeo" | "html-video";
-  src?: string; // 影片來源
-  preview: string; // 預覽圖片來源
-}
+import VideoSlideItem, {
+  VideoSlideItemProps,
+} from "../VideoSlideItem/VideoSlideItem";
 
 export interface VideoSliderProps extends SplideProps {
-  items: Item[];
+  items: VideoSlideItemProps[];
 }
 
 const VideoSlider = forwardRef<Splide, VideoSliderProps>(
   ({ items, options }, ref) => {
-    const renderItems = (items: VideoSliderProps["items"]) => {
-      return items.map((item) => {
-        const properties: { [key: string]: string } = {
-          className: "splide__slide",
-          key: item.id,
-        };
-        if (item.video && item.src) {
-          properties[`data-splide-${item.video}`] = item.src;
-        }
-        const component = (
-          <li {...properties}>
-            <img src={item.preview} alt="" />
-          </li>
-        );
+    const videoRefs = useRef<(HTMLVideoElement | null)[]>(
+      Array(items.length).fill(null)
+    );
 
-        return component;
+    const renderItems = (items: VideoSliderProps["items"]) => {
+      return items.map((item, i) => {
+        return (
+          <VideoSlideItem
+            {...item}
+            key={item.id}
+            ref={(e) => (videoRefs.current[i] = e)}
+          />
+        );
       });
+    };
+
+    const handleMove = (_: any, index: number) => {
+      videoRefs.current.forEach((ref) => {
+        if (ref) {
+          ref.pause();
+          ref.currentTime = 0;
+        }
+      });
+      videoRefs.current[index]?.play();
     };
 
     return (
       <Splide
         ref={ref}
         options={{
-          video: {
-            autoplay: true,
-            mute: true,
-          },
           ...options,
+          destroy: true,
         }}
-        Extensions={{ Video }}
+        onMove={handleMove}
+        onDestroy={() => console.log("destroy video slider")}
       >
         {renderItems(items)}
       </Splide>

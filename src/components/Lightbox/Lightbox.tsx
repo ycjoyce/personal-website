@@ -12,12 +12,7 @@ export interface LightBoxProps extends ThumbnailSliderProps {
   onClose?: () => void;
 }
 
-const LightBox: FC<LightBoxProps> = ({
-  root,
-  onClose = () => {},
-  main,
-  thumbs,
-}) => {
+const LightBox: FC<LightBoxProps> = ({ root, onClose = () => {}, items }) => {
   const modalRoot = useRef(document.getElementById(root || "modal-root"));
   const el = useRef(document.createElement("div"));
 
@@ -44,7 +39,7 @@ const LightBox: FC<LightBoxProps> = ({
     <StyledModal>
       <StyledModalBackground onClick={handleClickOutside} />
       <StyledModalContent>
-        <ThumbnailSlider main={main} thumbs={thumbs} />
+        <ThumbnailSlider items={items} />
       </StyledModalContent>
     </StyledModal>
   );

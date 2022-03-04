@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import Button from "../Button/Button";
 import Skill, { SkillProps } from "../Skill/Skill";
 import Title from "../Title/Title";
+import { Item } from "../VideoSlider/VideoSlider";
 import StyledProject, {
   StyledImageBox,
   StyledIntroBox,
@@ -18,7 +19,7 @@ export interface ProjectProps {
   intro: string;
   cover: string;
   skills: SkillProps["title"][];
-  more?: boolean;
+  more?: Item[];
   primary?: boolean;
   onClick?: (id: string) => void;
 }
@@ -51,7 +52,7 @@ const Project: FC<ProjectProps> = ({
   return (
     <StyledProject
       data-year={year}
-      more={more}
+      more={!!more}
       primary={primary}
       onClick={handleClick}
     >
