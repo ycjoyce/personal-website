@@ -1,8 +1,9 @@
-import React, { FC, useRef, useEffect, useMemo } from "react";
+import React, { FC, useRef, useEffect, useMemo, Fragment } from "react";
 import { Splide } from "@splidejs/react-splide";
 import { VideoSlideItemProps } from "../VideoSlideItem/VideoSlideItem";
 import VideoSlider from "../VideoSlider/VideoSlider";
 import Slider from "../Slider/Slider";
+import Pill from "../Pill/Pill";
 
 export interface ThumbnailSliderProps {
   items: VideoSlideItemProps[];
@@ -23,8 +24,11 @@ const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ items }) => {
   }, []);
 
   const renderImages = (items: ThumbnailSliderProps["items"]) => {
-    return items.map(({ preview, id }, i) => (
-      <img src={preview} alt="" key={id} />
+    return items.map(({ preview, id, video }, i) => (
+      <Fragment key={id}>
+        {video && <Pill color="rgba(255, 255, 255, 0.8)">video</Pill>}
+        <img src={preview} alt="" />
+      </Fragment>
     ));
   };
 
@@ -35,9 +39,7 @@ const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ items }) => {
       perMove: 1,
       pagination: false,
       height: "50vh",
-      classes: {
-        arrows: "splide__arrows primary-arrows",
-      },
+      arrows: false,
       video: {
         autoplay: true,
         mute: true,
@@ -58,48 +60,25 @@ const ThumbnailSlider: FC<ThumbnailSliderProps> = ({ items }) => {
       cover: true,
       isNavigation: true,
       classes: {
-        arrows: "splide__arrows secondary-arrows",
+        arrows: "splide__arrows secondary-arrows thumb-arrows",
       },
+      padding: "2rem",
       destroy: true,
     }),
     []
   );
 
-  useEffect(() => {
-    const mainEl = mainRef.current;
-    const thumbEl = thumbnailRef.current;
-
-    return () => {
-      // mainEl?.splide?.destroy();
-      // thumbEl?.splide?.destroy();
-      console.log("銷毀thumbnailslider");
-    };
-  }, []);
-
   return (
     <div>
       {items.find((e) => e.video) ? (
-        <VideoSlider
-          ref={mainRef}
-          options={mainOptions}
-          items={items}
-          onDestroy={() => console.log("destroy main video slider")}
-        />
+        <VideoSlider ref={mainRef} options={mainOptions} items={items} />
       ) : (
-        <Slider
-          ref={mainRef}
-          options={mainOptions}
-          onDestroy={() => console.log("destroy main image slider")}
-        >
+        <Slider ref={mainRef} options={mainOptions}>
           {renderImages(items)}
         </Slider>
       )}
 
-      <Slider
-        ref={thumbnailRef}
-        options={thumbsOptions}
-        onDestroy={() => console.log("destroy sub image slider")}
-      >
+      <Slider ref={thumbnailRef} options={thumbsOptions}>
         {renderImages(items)}
       </Slider>
     </div>

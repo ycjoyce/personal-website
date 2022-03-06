@@ -1,37 +1,16 @@
 import React, { FC } from "react";
 import Title from "../Title/Title";
-import Timeline from "../Timeline/Timeline";
+import Timeline, { TimelineProps } from "../Timeline/Timeline";
 
-export interface ExperienceSectionProps {}
+export interface ExperienceSectionProps {
+  items: TimelineProps["items"];
+}
 
-const ExperienceSection: FC<ExperienceSectionProps> = () => {
+const ExperienceSection: FC<ExperienceSectionProps> = ({ items }) => {
   return (
-    <section>
+    <section id="experience">
       <Title primary>Experience</Title>
-      <Timeline
-        items={[
-          {
-            time: "2020 - present",
-            title: "智趣王數位科技股份有限公司",
-            content: "",
-          },
-          {
-            time: "2019 - 2020",
-            title: "資策會 Web App 前端工程課程",
-            content: "",
-          },
-          {
-            time: "2017 - 2019",
-            title: "雄獅旅行社股份有限公司",
-            content: "",
-          },
-          {
-            time: "2013 - 2017",
-            title: "台灣藝術大學圖文傳播學系",
-            content: "",
-          },
-        ]}
-      />
+      <Timeline items={items} />
     </section>
   );
 };

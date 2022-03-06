@@ -85,9 +85,15 @@
 }
 
 .secondary-arrows .splide__arrow--prev {
-  left: -1.5em;
+  left: -0.5em;
 }
 
 .secondary-arrows .splide__arrow--next {
-  right: -1.5em;
+  right: -0.5em;
+}
+
+.thumb-arrows .splide__arrow svg {
+  width: 1.5em;
+  height: 1.5em;
+  filter: drop-shadow(0 0 2px rgb(0,0,0,0.8));
 }

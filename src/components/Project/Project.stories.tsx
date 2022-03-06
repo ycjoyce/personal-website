@@ -27,7 +27,30 @@ Default.args = {
 export const More = Template.bind({});
 More.args = {
   ...defaultArgs,
-  more: [],
+  more: [
+    {
+      id: "",
+      video: "",
+      preview: "",
+    },
+  ],
+};
+
+export const Links = Template.bind({});
+Links.args = {
+  ...defaultArgs,
+  links: [
+    {
+      icon: "link",
+      url: "https://ycjoyce.github.io/react-pomodoro/",
+      label: "Demo",
+    },
+    {
+      icon: "github",
+      url: "https://github.com/ycjoyce/react-pomodoro",
+      label: "Github",
+    },
+  ],
 };
 
 export const Primary = Template.bind({});
@@ -37,9 +60,21 @@ Primary.args = {
   cover: require("../../images/mac.png"),
 };
 
-export const PrimaryMore = Template.bind({});
-PrimaryMore.args = {
+export const PrimaryLinks = Template.bind({});
+PrimaryLinks.args = {
   ...defaultArgs,
   primary: true,
-  more: [],
+  cover: require("../../images/mac.png"),
+  links: [
+    {
+      icon: "link",
+      url: "https://ycjoyce.github.io/react-pomodoro/",
+      label: "Demo",
+    },
+    {
+      icon: "github",
+      url: "https://github.com/ycjoyce/react-pomodoro",
+      label: "Github",
+    },
+  ],
 };

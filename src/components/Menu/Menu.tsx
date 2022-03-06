@@ -2,8 +2,13 @@ import React, { FC } from "react";
 import Arrow from "../Arrow/Arrow";
 import StyledMenu, { StyledMenuList, StyledMenuItem } from "./Menu.style";
 
+export interface MenuItem {
+  title: string;
+  onClick(title: string): void;
+}
+
 export interface MenuProps {
-  items: { title: string; onClick(title: string): void }[];
+  items: MenuItem[];
 }
 
 const Menu: FC<MenuProps> = ({ items }) => {

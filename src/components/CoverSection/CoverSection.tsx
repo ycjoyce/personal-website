@@ -7,7 +7,9 @@ import { StyledBlotterBox } from "./CoverSection.style";
 import StyledBlotter from "../Blotter/Blotter.style";
 import theme from "../../styles/abstracts/theme";
 
-export interface CoverSectionProps {}
+export interface CoverSectionProps {
+  strings: string[];
+}
 
 declare global {
   interface Window {
@@ -15,7 +17,7 @@ declare global {
   }
 }
 
-const CoverSection: FC<CoverSectionProps> = () => {
+const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
   // Blotter 字體的旋轉角度
   const [rotate, setRotate] = useState({ J: 0, o: 0, y: 0, c: 0, e: 0 });
 
@@ -74,7 +76,7 @@ const CoverSection: FC<CoverSectionProps> = () => {
     }
 
     const options = {
-      strings: ["Front-end Developer", "Joyce Chen"],
+      strings,
       typeSpeed: 100,
       backSpeed: 80,
       loop: true,
@@ -86,7 +88,7 @@ const CoverSection: FC<CoverSectionProps> = () => {
     return () => {
       typed.current.destroy();
     };
-  }, []);
+  }, [strings]);
 
   return (
     <StyledCoverSection onMouseMove={handleMouseMove}>
