@@ -8,10 +8,11 @@ export interface MenuItem {
 }
 
 export interface MenuProps {
+  opened?: boolean;
   items: MenuItem[];
 }
 
-const Menu: FC<MenuProps> = ({ items }) => {
+const Menu: FC<MenuProps> = ({ opened = false, items }) => {
   const renderItems = (items: MenuProps["items"]) => {
     return items.map(({ title, onClick }) => (
       <StyledMenuItem key={title} onClick={() => onClick(title)}>
@@ -22,7 +23,7 @@ const Menu: FC<MenuProps> = ({ items }) => {
   };
 
   return (
-    <StyledMenu>
+    <StyledMenu opened={opened}>
       <StyledMenuList>{renderItems(items)}</StyledMenuList>
     </StyledMenu>
   );

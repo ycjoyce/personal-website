@@ -19,9 +19,12 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
         <Blotter text="Jc" fontSize={40}></Blotter>
 
         <StyledOperateBox>
-          <Button outline size="sm" color={theme.color.emphasize}>
-            resume
+          <Menu items={menu} opened={menuOpened} />
+
+          <Button outline size="sm" color={theme.color.primary}>
+            Resume
           </Button>
+
           <Hamburger
             opened={menuOpened}
             color={menuOpened ? "#fff" : theme.color.emphasize}
@@ -29,7 +32,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
           />
         </StyledOperateBox>
 
-        {menuOpened && <Menu items={menu} />}
+        {/* {menuOpened && <Menu items={menu} />} */}
       </StyledHeader>
     );
   }
