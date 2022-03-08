@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import Title from "../Title/Title";
 import Parallax from "../Parallax/Parallax";
-import theme from "../../styles/abstracts/theme";
 import StyledAboutSection, {
   StyledImagesBox,
   StyledArticle,
@@ -40,7 +39,7 @@ const AboutSection: FC<AboutSectionProps> = ({
       </StyledImagesBox>
 
       <StyledArticle>
-        <Title primary color={theme.color.dark}>
+        <Title level={2} primary>
           About
         </Title>
         {content.split("\n").map((e, i) => (

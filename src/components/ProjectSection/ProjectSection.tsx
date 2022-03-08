@@ -47,7 +47,9 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
       )}
 
       <StyledProjectsBox>
-        <Title primary>Projects</Title>
+        <Title level={2} primary>
+          Projects
+        </Title>
         <ProjectList
           options={{
             classes: {

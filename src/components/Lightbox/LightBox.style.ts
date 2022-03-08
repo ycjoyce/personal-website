@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledModalBackground = styled.div`
   background-color: #000;
-  opacity: 0.9;
+  opacity: 0.7;
   width: 100%;
   height: 100%;
   position: absolute;

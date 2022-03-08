@@ -6,6 +6,7 @@ import StyledCoverSection, { StyledArrowBox } from "./CoverSection.style";
 import { StyledBlotterBox } from "./CoverSection.style";
 import StyledBlotter from "../Blotter/Blotter.style";
 import theme from "../../styles/abstracts/theme";
+import AnimatedBackground from "../AnimatedBackground/AnimatedBackground";
 
 export interface CoverSectionProps {
   strings: string[];
@@ -92,6 +93,8 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
 
   return (
     <StyledCoverSection onMouseMove={handleMouseMove}>
+      <AnimatedBackground />
+
       <StyledBlotterBox>
         <StyledBlotter
           id="j-box"
@@ -102,7 +105,8 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           text="J"
           appendTo="j-box"
           fontSize={400}
-          rotation={rotate["J"]}
+          // rotation={rotate["J"]}
+          rotation={45}
         ></Blotter>
 
         <StyledBlotter
@@ -127,7 +131,8 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           appendTo="y-box"
           fontSize={90}
           rgbOffset={0.15}
-          rotation={rotate["y"]}
+          // rotation={rotate["y"]}
+          rotation={10}
         ></Blotter>
 
         <StyledBlotter
@@ -139,7 +144,8 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           text="c"
           appendTo="c-box"
           fontSize={400}
-          rotation={rotate["c"]}
+          // rotation={rotate["c"]}
+          rotation={120}
         ></Blotter>
 
         <StyledBlotter
@@ -151,7 +157,8 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           text="e"
           appendTo="e-box"
           fontSize={100}
-          rotation={rotate["e"]}
+          // rotation={rotate["e"]}
+          rotation={45}
           rgbOffset={0.2}
         ></Blotter>
 
@@ -159,12 +166,7 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
       </StyledBlotterBox>
 
       <StyledArrowBox>
-        <Arrow
-          direction="bottom"
-          animate
-          color={theme.color.dark}
-          length="80px"
-        />
+        <Arrow direction="bottom" color={theme.color.dark} length="80px" />
         <p>SCROLL</p>
       </StyledArrowBox>
     </StyledCoverSection>

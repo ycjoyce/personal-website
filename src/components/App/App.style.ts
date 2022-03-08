@@ -8,7 +8,7 @@ export const StyledWrapper = styled.div`
 
   ${({ theme }) => {
     return css`
-      ${breakpointDown(theme.breakpoints.lg)} {
+      ${breakpointDown(theme.breakpoints.xl)} {
         padding: 20px;
       }
       ${breakpointDown(theme.breakpoints.sm)} {
@@ -20,9 +20,7 @@ export const StyledWrapper = styled.div`
 
 const StyledApp = styled.div`
   & section {
-    &:not(:last-child) {
-      margin-bottom: 200px;
-    }
+    margin: 150px 0;
   }
 
   & ${StyledHeader} {
