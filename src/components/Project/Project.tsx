@@ -97,9 +97,11 @@ const Project: FC<ProjectProps> = ({
 
       <StyledIntroBox>
         {primary && (
-          <Title level={3} size={3}>
-            {title}
-          </Title>
+          <>
+            <Title level={3} size={3}>
+              {title}
+            </Title>
+          </>
         )}
 
         <StyledLinksBox>

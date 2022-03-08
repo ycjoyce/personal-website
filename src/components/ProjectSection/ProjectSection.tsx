@@ -21,6 +21,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
   };
 
   const handleSubClick = (id: string) => {
+    console.log("sub");
     setLightBoxItems(sub.find((item) => item.id === id)?.more || []);
   };
 

@@ -133,6 +133,7 @@ const StyledProject = styled.div<StyledProjectProps>`
             top: -8px;
           }
         }
+        /* 主要元件結束 */
 
         /* 標題開始 */
         & ${StyledTitle} {
