@@ -7,15 +7,19 @@ import Blotter from "../Blotter/Blotter";
 import Menu, { MenuItem } from "../Menu/Menu";
 
 export interface HeaderProps {
+  hide?: boolean;
   menu: MenuItem[];
   menuOpened?: boolean;
   onHamburgerClick?: () => void;
 }
 
 const Header = forwardRef<HTMLElement, HeaderProps>(
-  ({ menu, menuOpened = false, onHamburgerClick = () => {} }, ref) => {
+  (
+    { hide = false, menu, menuOpened = false, onHamburgerClick = () => {} },
+    ref
+  ) => {
     return (
-      <StyledHeader ref={ref}>
+      <StyledHeader ref={ref} hide={hide}>
         <Blotter text="Jc" fontSize={40}></Blotter>
 
         <StyledOperateBox>

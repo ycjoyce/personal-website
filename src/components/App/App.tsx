@@ -1,4 +1,5 @@
 import React, { FC, useState, useRef } from "react";
+import useScrollDirection from "../../hooks/useScrollDirection";
 import AboutSection from "../AboutSection/AboutSection";
 import CoverSection from "../CoverSection/CoverSection";
 import Header from "../Header/Header";
@@ -10,6 +11,7 @@ import { about, cover, experience, projects } from "../../data";
 const App: FC = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerEl = useRef<HTMLElement>(null);
+  const { direction } = useScrollDirection();
 
   const handleHamburgerClick = () => {
     setMenuOpened((o) => !o);
@@ -50,6 +52,7 @@ const App: FC = () => {
     <StyledApp>
       <Header
         ref={headerEl}
+        hide={direction === "down"}
         menu={headerItems}
         menuOpened={menuOpened}
         onHamburgerClick={handleHamburgerClick}
