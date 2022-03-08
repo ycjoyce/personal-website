@@ -2,7 +2,7 @@ import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
   color: {
-    primary: "#ea5548",
+    primary: "#00A4B4",
     secondary: "#6e6e6e",
     light: "#acacac",
     dark: "#414141",
@@ -17,6 +17,13 @@ const theme: DefaultTheme = {
     5: "1.2rem",
     6: "1rem",
     small: "0.8rem",
+  },
+  breakpoints: {
+    sm: "576px",
+    md: "768px",
+    lg: "992px",
+    xl: "1200px",
+    xxl: "1400px",
   },
 };
 

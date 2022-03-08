@@ -20,7 +20,13 @@ const VideoSlider = forwardRef<Splide, VideoSliderProps>(
           <VideoSlideItem
             {...item}
             key={item.id}
-            ref={(e) => (videoRefs.current[i] = e)}
+            ref={(e) => {
+              if (e) {
+                e.defaultMuted = true;
+                e.muted = true;
+              }
+              videoRefs.current[i] = e;
+            }}
           />
         );
       });

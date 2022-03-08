@@ -7,7 +7,9 @@ export default {
 };
 
 const Template: Story<CoverSectionProps> = (args) => {
-  return <CoverSection />;
+  return (
+    <CoverSection {...args} strings={["First sentence", "Second sentence"]} />
+  );
 };
 
 export const Default = Template.bind({});

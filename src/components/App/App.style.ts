@@ -1,9 +1,21 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import StyledHeader from "../Header/Header.style";
+import { breakpointDown } from "../../styles/abstracts/mixins";
 
 export const StyledWrapper = styled.div`
   margin: 0 auto;
   max-width: 1200px;
+
+  ${({ theme }) => {
+    return css`
+      ${breakpointDown(theme.breakpoints.lg)} {
+        padding: 20px;
+      }
+      ${breakpointDown(theme.breakpoints.sm)} {
+        padding: 10px;
+      }
+    `;
+  }}
 `;
 
 const StyledApp = styled.div`
@@ -18,7 +30,7 @@ const StyledApp = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
   }
 `;
 

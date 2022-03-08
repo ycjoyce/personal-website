@@ -21,7 +21,7 @@ const VideoSlideItem = forwardRef<HTMLVideoElement, VideoSlideItemProps>(
               poster={preview}
               controls
               autoPlay
-              muted
+              playsInline
             />
           ) : (
             <img src={preview} alt="" />

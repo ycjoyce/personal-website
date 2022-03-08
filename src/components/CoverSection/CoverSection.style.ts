@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import StyledBlotter from "../Blotter/Blotter.style";
 import StyledArrow from "../Arrow/Arrow.style";
+import { breakpointDown } from "../../styles/abstracts/mixins";
 
 export const StyledArrowBox = styled.div`
   text-align: center;
@@ -30,6 +31,15 @@ export const StyledBlotterBox = styled.div`
   height: 500px;
   width: 450px;
   margin: 0 auto;
+
+  ${({ theme }) => {
+    return css`
+      ${breakpointDown(theme.breakpoints.sm)} {
+        width: 100%;
+        overflow: hidden;
+      }
+    `;
+  }}
 
   ${StyledBlotter} {
     position: absolute;

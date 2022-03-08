@@ -4,6 +4,9 @@ import Project, { ProjectProps } from "../Project/Project";
 import Title from "../Title/Title";
 import LightBox from "../Lightbox/Lightbox";
 import { VideoSlideItemProps } from "../VideoSlideItem/VideoSlideItem";
+import StyledProjectSection, {
+  StyledProjectsBox,
+} from "./ProjectSection.style";
 
 export interface ProjectSectionProps {
   main: ProjectProps[];
@@ -13,7 +16,9 @@ export interface ProjectSectionProps {
 const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
   const [lightBoxItems, setLightBoxItems] = useState<VideoSlideItemProps[]>([]);
 
-  const handleMainClick = () => {};
+  const handleMainClick = (id: string) => {
+    setLightBoxItems(main.find((item) => item.id === id)?.more || []);
+  };
 
   const handleSubClick = (id: string) => {
     setLightBoxItems(sub.find((item) => item.id === id)?.more || []);
@@ -31,17 +36,16 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
   };
 
   const handleCloseLightBox = () => {
-    console.log("close");
     setLightBoxItems([]);
   };
 
   return (
-    <section>
-      {lightBoxItems.length && (
+    <StyledProjectSection id="projects">
+      {lightBoxItems.length > 0 && (
         <LightBox items={lightBoxItems} onClose={handleCloseLightBox} />
       )}
 
-      <div>
+      <StyledProjectsBox>
         <Title primary>Projects</Title>
         <ProjectList
           options={{
@@ -56,9 +60,9 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
         >
           {renderProjects(true, main)}
         </ProjectList>
-      </div>
+      </StyledProjectsBox>
 
-      <div>
+      <StyledProjectsBox>
         <Title level={2}>More Projects</Title>
         <ProjectList
           progress
@@ -71,15 +75,24 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
             rewind: true,
             rewindSpeed: 1000,
             gap: "2rem",
-            autoplay: true,
+            // autoplay: true,
             pauseOnHover: true,
             pagination: false,
+            padding: "1.5rem",
+            breakpoints: {
+              950: {
+                perPage: 2,
+              },
+              600: {
+                perPage: 1,
+              },
+            },
           }}
         >
           {renderProjects(false, sub)}
         </ProjectList>
-      </div>
-    </section>
+      </StyledProjectsBox>
+    </StyledProjectSection>
   );
 };
 

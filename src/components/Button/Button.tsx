@@ -1,6 +1,5 @@
 import React, { FC, ReactNode } from "react";
 import StyledButton from "./Button.style";
-import theme from "../../styles/abstracts/theme";
 
 export type ButtonSize = "sm" | "md" | "lg";
 

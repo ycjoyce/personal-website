@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import Lightbox, { LightboxProps } from "./Lightbox";
 
 export default {
-  title: "LightBox",
+  title: "Lightbox",
   component: Lightbox,
 };
 

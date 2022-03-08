@@ -4,6 +4,7 @@ import { ThumbnailSliderProps } from "../ThumbnailSlider/ThumbnailSlider";
 import StyledModal, {
   StyledModalBackground,
   StyledModalContent,
+  StyledCloseButton,
 } from "./Lightbox.style";
 import ThumbnailSlider from "../ThumbnailSlider/ThumbnailSlider";
 
@@ -39,6 +40,9 @@ const Lightbox: FC<LightboxProps> = ({ root, onClose = () => {}, items }) => {
     <StyledModal>
       <StyledModalBackground onClick={handleClickOutside} />
       <StyledModalContent>
+        <StyledCloseButton onClick={onClose}>
+          <i className="fa fa-times"></i>
+        </StyledCloseButton>
         <ThumbnailSlider items={items} />
       </StyledModalContent>
     </StyledModal>
