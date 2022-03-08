@@ -1,7 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { breakpointDown } from "../../styles/abstracts/mixins";
+import StyledTitle from "../Title/Title.style";
 
 const markerWidth = 15;
 const lineGap = 10;
+const mobileTimeWidth = 50;
+const markerMargin = 20;
 
 export const StyledMarker = styled.div`
   width: ${markerWidth}px;
@@ -11,7 +15,7 @@ export const StyledMarker = styled.div`
   border: 2px solid ${({ theme }) => theme.color.primary};
   transition: background-color 0.3s;
   flex-shrink: 0;
-  margin: 0 20px;
+  margin: 0 ${markerMargin}px;
 `;
 
 export const StyledBox = styled.div`
@@ -20,6 +24,15 @@ export const StyledBox = styled.div`
 
 export const StyledTime = styled(StyledBox)`
   text-align: right;
+
+  ${({ theme }) => {
+    return css`
+      ${breakpointDown(theme.breakpoints.sm)} {
+        text-align: left;
+        flex: 0 0 ${mobileTimeWidth}px;
+      }
+    `;
+  }}
 `;
 
 export const StyledIntro = styled(StyledBox)`
@@ -27,12 +40,37 @@ export const StyledIntro = styled(StyledBox)`
   text-align: justify;
   color: ${({ theme }) => theme.color.secondary};
 
-  & p {
-    margin: 0;
-  }
-
   & > *:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  & ${StyledTitle} {
+    background-color: ${({ theme }) => theme.color.emphasize};
+    padding: 5px;
+  }
+`;
+
+export const StyledList = styled.ul`
+  padding: 0;
+
+  & li {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    &::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: ${({ theme }) => theme.color.emphasize};
+      display: inline-block;
+      margin-right: 10px;
+      position: relative;
+      top: calc(0.5rem - 2.5px);
+      flex-shrink: 0;
+    }
   }
 `;
 
@@ -40,12 +78,6 @@ const StyledTimelineItem = styled.li`
   display: flex;
   align-items: flex-start;
   position: relative;
-
-  &:hover {
-    & ${StyledMarker} {
-      background-color: #fff;
-    }
-  }
 
   &::after {
     content: "";
@@ -57,6 +89,22 @@ const StyledTimelineItem = styled.li`
     left: 50%;
     transform: translateX(-50%);
     bottom: ${lineGap / 2}px;
+  }
+
+  ${({ theme }) => {
+    return css`
+      &::after {
+        ${breakpointDown(theme.breakpoints.sm)} {
+          left: ${mobileTimeWidth + markerMargin + markerWidth / 2}px;
+        }
+      }
+    `;
+  }}
+
+  &:hover {
+    & ${StyledMarker} {
+      background-color: #fff;
+    }
   }
 `;
 

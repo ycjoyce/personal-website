@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import Title from "../Title/Title";
 import Parallax from "../Parallax/Parallax";
 import theme from "../../styles/abstracts/theme";
@@ -18,10 +18,6 @@ const AboutSection: FC<AboutSectionProps> = ({
   imageTwo,
   content,
 }) => {
-  useEffect(() => {
-    console.log(content, content.split("\\n"));
-  }, [content]);
-
   return (
     <StyledAboutSection id="about">
       <StyledImagesBox>
@@ -47,7 +43,7 @@ const AboutSection: FC<AboutSectionProps> = ({
         <Title primary color={theme.color.dark}>
           About
         </Title>
-        {content.split("\\n").map((e, i) => (
+        {content.split("\n").map((e, i) => (
           <p key={`${e}${i}`}>{e}</p>
         ))}
       </StyledArticle>

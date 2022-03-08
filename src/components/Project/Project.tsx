@@ -109,7 +109,7 @@ const Project: FC<ProjectProps> = ({
         </StyledLinksBox>
 
         <div>
-          {intro.split("\\n").map((e, i) => (
+          {intro.split("\n").map((e, i) => (
             <StyledParagraph key={`${i}${e}`}>{e}</StyledParagraph>
           ))}
         </div>

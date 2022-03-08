@@ -1,15 +1,16 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC } from "react";
 import Title from "../Title/Title";
 import StyledTimelineItem, {
   StyledMarker,
   StyledIntro,
   StyledTime,
+  StyledList,
 } from "./TimelineItem.style";
 
 export interface TimelineItemProps {
   time: string;
   title: string;
-  content: ReactNode;
+  content: string;
 }
 
 const TimelineItem: FC<TimelineItemProps> = ({ time, title, content }) => (
@@ -20,7 +21,11 @@ const TimelineItem: FC<TimelineItemProps> = ({ time, title, content }) => (
       <Title level={6} size={4}>
         {title}
       </Title>
-      <div>{content}</div>
+      <StyledList>
+        {content.split("\n").map((e) => (
+          <li key={e}>{e}</li>
+        ))}
+      </StyledList>
     </StyledIntro>
   </StyledTimelineItem>
 );
