@@ -9,11 +9,11 @@ export const cover: CoverSectionProps = {
 };
 
 export const about: AboutSectionProps = {
-  content: "Hello World\nJoyce",
+  content:
+    "Hi，我是陳怡嘉，一名「混血」前端工程師。\n主要從事網頁前端開發，並致力於撰寫更加簡潔易懂的程式碼。\n相信所有經歷都能成為人生路上珍貴的養分，在從事程式開發的同時，依然保有美的目光。",
   imageOne:
     "https://nationaltoday.com/wp-content/uploads/2020/07/Kitten-640x514.jpg",
-  imageTwo:
-    "https://media-exp1.licdn.com/dms/image/C4E1BAQEu7nDBxY2KXw/company-background_10000/0/1556122971779?e=2159024400&v=beta&t=-oR_B0gCjXcLUObiGLx7lbA5KwVibKY5xIRsgE_n7b4",
+  imageTwo: require("./images/IMG_9608.jpeg"),
 };
 
 export const projects: ProjectSectionProps = {
@@ -414,9 +414,20 @@ export const projects: ProjectSectionProps = {
       subtitle: "Work Project",
       intro:
         "網頁設計與前端網頁切版，內容以圖文呈現為主，並實作點擊專輯封面播放音檔功能。",
-      cover: "",
+      cover: require("./images/ilisten_2022-image-01.jpg"),
       skills: ["html", "javascript", "vue", "scss", "rwd"],
-      more: [],
+      more: [
+        {
+          id: uuidv4(),
+          video: require("./images/ilisten_2022-video-01.mov"),
+          preview: require("./images/ilisten_2022-image-01.jpg"),
+        },
+        {
+          id: uuidv4(),
+          video: require("./images/ilisten_2022-video-02.mov"),
+          preview: require("./images/ilisten_2022-image-01.jpg"),
+        },
+      ],
     },
   ],
 };
