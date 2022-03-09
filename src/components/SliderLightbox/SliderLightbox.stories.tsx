@@ -1,6 +1,6 @@
 import { Story } from "@storybook/react/types-6-0";
 import { v4 as uuidv4 } from "uuid";
-import Lightbox, { LightboxProps } from "./Lightbox";
+import Lightbox, { LightboxProps } from "./SliderLightbox";
 
 export default {
   title: "Lightbox",
