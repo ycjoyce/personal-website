@@ -200,7 +200,6 @@ const StyledProject = styled.div<StyledProjectProps>`
             }
 
             ${breakpointDown(theme.breakpoints.md)} {
-              width: 100%;
               max-width: 300px;
               max-height: 100%;
               margin: 0;
@@ -255,6 +254,14 @@ const StyledProject = styled.div<StyledProjectProps>`
           transform: translate(-50%, -50%);
           border-top: 1px solid #fff;
           border-bottom: 1px solid #fff;
+
+          ${({ theme }) => {
+            return css`
+              ${breakpointDown(theme.breakpoints.md)} {
+                width: calc(100% - 40px);
+              }
+            `;
+          }}
         }
         /* 圖片容器裝飾結束 */
 
@@ -329,6 +336,14 @@ const StyledProject = styled.div<StyledProjectProps>`
             background: #fff;
             color: ${({ theme }) => theme.color.primary};
           }
+
+          ${({ theme }) => {
+            return css`
+              ${breakpointDown(theme.breakpoints.md)} {
+                opacity: 1;
+              }
+            `;
+          }}
         }
         /* 查看更多按鈕結束 */
       }
