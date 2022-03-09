@@ -3,7 +3,7 @@ import { Parallax } from "react-scroll-parallax";
 import ProjectList from "../ProjectList/ProjectList";
 import Project, { ProjectProps } from "../Project/Project";
 import Title from "../Title/Title";
-import LightBox from "../Lightbox/Lightbox";
+import Lightbox from "../SliderLightbox/SliderLightbox";
 import { VideoSlideItemProps } from "../VideoSlideItem/VideoSlideItem";
 import StyledProjectSection, {
   StyledProjectsBox,
@@ -43,7 +43,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
   return (
     <StyledProjectSection id="projects">
       {lightBoxItems.length > 0 && (
-        <LightBox items={lightBoxItems} onClose={handleCloseLightBox} />
+        <Lightbox items={lightBoxItems} onClose={handleCloseLightBox} />
       )}
 
       <StyledProjectsBox>
