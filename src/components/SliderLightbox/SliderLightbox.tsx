@@ -5,7 +5,7 @@ import StyledModal, {
   StyledModalBackground,
   StyledModalContent,
   StyledCloseButton,
-} from "./Lightbox.style";
+} from "./SliderLightbox.style";
 import ThumbnailSlider from "../ThumbnailSlider/ThumbnailSlider";
 
 export interface LightboxProps extends ThumbnailSliderProps {
