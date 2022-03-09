@@ -10,9 +10,8 @@ export const cover: CoverSectionProps = {
 
 export const about: AboutSectionProps = {
   content:
-    "Hi，我是陳怡嘉，一名「混血」前端工程師。\n主要從事網頁前端開發，並致力於撰寫更加簡潔易懂的程式碼。\n相信所有經歷都能成為人生路上珍貴的養分，在從事程式開發的同時，依然保有美的目光。",
-  imageOne:
-    "https://nationaltoday.com/wp-content/uploads/2020/07/Kitten-640x514.jpg",
+    "Hi，我是陳怡嘉。\n主要從事網頁前端開發，並致力於撰寫更加簡潔易懂的程式碼。\n相信所有經歷都能成為人生路上珍貴的養分，在從事程式開發的同時，依然保有美的目光。",
+  imageOne: require("./images/about_background.jpg"),
   imageTwo: require("./images/IMG_9608.jpeg"),
 };
 
@@ -121,16 +120,16 @@ export const projects: ProjectSectionProps = {
         },
         {
           id: uuidv4(),
+          video: require("./images/image-flow_2022-video-02.mov"),
+          preview: require("./images/image-flow_2022-image-01.jpg"),
+        },
+        {
+          id: uuidv4(),
           preview: require("./images/image-flow_2022-image-01.jpg"),
         },
         {
           id: uuidv4(),
           preview: require("./images/image-flow_2022-image-02.jpg"),
-        },
-        {
-          id: uuidv4(),
-          video: require("./images/image-flow_2022-video-02.mov"),
-          preview: require("./images/image-flow_2022-image-01.jpg"),
         },
       ],
     },
@@ -157,6 +156,11 @@ export const projects: ProjectSectionProps = {
         },
         {
           id: uuidv4(),
+          video: require("./images/payment_2022-video-02.mov"),
+          preview: require("./images/payment_2022-image-01.jpg"),
+        },
+        {
+          id: uuidv4(),
           preview: require("./images/payment_2022-image-01.jpg"),
         },
         {
@@ -174,11 +178,6 @@ export const projects: ProjectSectionProps = {
         {
           id: uuidv4(),
           preview: require("./images/payment_2022-image-05.jpg"),
-        },
-        {
-          id: uuidv4(),
-          video: require("./images/payment_2022-video-02.mov"),
-          preview: require("./images/payment_2022-image-01.jpg"),
         },
       ],
     },
@@ -206,6 +205,11 @@ export const projects: ProjectSectionProps = {
         },
         {
           id: uuidv4(),
+          video: require("./images/mask-map_2022-video-02.mov"),
+          preview: require("./images/mask-map_2022-image-01.jpg"),
+        },
+        {
+          id: uuidv4(),
           preview: require("./images/mask-map_2022-image-01.jpg"),
         },
         {
@@ -223,11 +227,6 @@ export const projects: ProjectSectionProps = {
         {
           id: uuidv4(),
           preview: require("./images/mask-map_2022-image-05.jpg"),
-        },
-        {
-          id: uuidv4(),
-          video: require("./images/mask-map_2022-video-02.mov"),
-          preview: require("./images/mask-map_2022-image-01.jpg"),
         },
       ],
     },

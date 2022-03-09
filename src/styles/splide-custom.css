@@ -1,3 +1,7 @@
+:root {
+  --emphasize: #b5e254;
+}
+
 .splide__slide {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -9,13 +13,13 @@
 }
 
 .my-slider-progress {
-  background: #ccc;
+  background: #eee;
   margin-top: 20px;
   width: 100%;
 }
 
 .my-slider-progress-bar {
-  background: greenyellow;
+  background: var(--emphasize);
   height: 2px;
   transition: width 400ms ease;
   width: 0;
@@ -50,7 +54,7 @@
 }
 
 .splide__pagination__page.is-active {
-  background: greenyellow;
+  background: var(--emphasize);
 }
 
 .primary-arrows .splide__arrow {
@@ -75,7 +79,7 @@
 }
 
 .secondary-arrows .splide__arrow svg{
-  fill: greenyellow;
+  fill: var(--emphasize);
   width: 2em;
   height: 2em;
 }

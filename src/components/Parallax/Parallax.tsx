@@ -1,27 +1,32 @@
-import React, { FC, useEffect, useRef } from "react";
-import simpleParallax, { IParallaxSettings } from "simple-parallax-js";
+import React, { FC } from "react";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export interface ParallaxProps {
   src: string;
-  alt?: string;
-  config?: IParallaxSettings;
+  speed?: number;
+  expanded?: boolean;
+  style?: { [key: string]: string };
 }
 
-const Parallax: FC<ParallaxProps> = ({ src, alt = "", config = {} }) => {
-  const ref = useRef<HTMLImageElement>(null);
-
-  useEffect(() => {
-    if (!ref.current) {
-      return;
-    }
-    const instance = new simpleParallax(ref.current, { ...config });
-
-    return () => {
-      instance.destroy();
-    };
-  }, [config]);
-
-  return <img ref={ref} src={src} alt={alt} />;
+const Parallax: FC<ParallaxProps> = ({
+  src,
+  speed = -20,
+  style,
+  expanded = true,
+}) => {
+  return (
+    <ParallaxBanner
+      layers={[
+        {
+          image: src,
+          speed,
+          expanded,
+        },
+      ]}
+      style={{ height: "100%", ...style }}
+      className="parallax"
+    />
+  );
 };
 
 export default Parallax;

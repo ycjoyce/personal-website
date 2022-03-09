@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import Title from "../Title/Title";
 import Parallax from "../Parallax/Parallax";
+import { Parallax as ScrollParallax } from "react-scroll-parallax";
 import StyledAboutSection, {
   StyledImagesBox,
   StyledArticle,
@@ -22,26 +23,34 @@ const AboutSection: FC<AboutSectionProps> = ({
       <StyledImagesBox>
         <Parallax
           src={imageOne}
-          config={{
-            scale: 1.5,
-            delay: 0.6,
-            transition: "cubic-bezier(0,0,0,1)",
+          speed={-20}
+          style={{
+            display: "inline-block",
+            width: "70%",
           }}
         />
         <Parallax
           src={imageTwo}
-          config={{
-            scale: 1.5,
-            delay: 0.6,
-            transition: "cubic-bezier(0,0,0,1)",
+          speed={-10}
+          expanded={false}
+          style={{
+            display: "inline-block",
+            width: "30%",
+            position: "absolute",
+            right: "30px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            height: "80%",
           }}
         />
       </StyledImagesBox>
 
       <StyledArticle>
-        <Title level={2} primary>
-          About
-        </Title>
+        <ScrollParallax speed={2} translateX={["20px", "0px"]}>
+          <Title level={2} primary>
+            About
+          </Title>
+        </ScrollParallax>
         {content.split("\n").map((e, i) => (
           <p key={`${e}${i}`}>{e}</p>
         ))}

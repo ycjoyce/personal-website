@@ -1,3 +1,4 @@
+import { colord } from "colord";
 import styled, { css } from "styled-components";
 import { breakpointDown } from "../../styles/abstracts/mixins";
 import StyledTitle from "../Title/Title.style";
@@ -11,11 +12,28 @@ export const StyledMarker = styled.div`
   width: ${markerWidth}px;
   height: ${markerWidth}px;
   border-radius: 100%;
-  background-color: ${({ theme }) => theme.color.primary};
+  background-color: transparent;
   border: 2px solid ${({ theme }) => theme.color.primary};
   transition: background-color 0.3s;
   flex-shrink: 0;
   margin: 0 ${markerMargin}px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-radius: 100%;
+    border: 2px solid
+      ${({ theme }) => colord(theme.color.primary).alpha(0.5).toRgbString()};
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s, width 0.5s, height 0.5s;
+  }
 `;
 
 export const StyledBox = styled.div`
@@ -45,8 +63,8 @@ export const StyledIntro = styled(StyledBox)`
   }
 
   & ${StyledTitle} {
-    background-color: ${({ theme }) => theme.color.emphasize};
-    padding: 5px;
+    /* background-color: ${({ theme }) => theme.color.emphasize};
+    padding: 5px; */
   }
 `;
 
@@ -70,6 +88,7 @@ export const StyledList = styled.ul`
       position: relative;
       top: calc(0.5rem - 2.5px);
       flex-shrink: 0;
+      border-radius: 100%;
     }
   }
 `;
@@ -103,7 +122,13 @@ const StyledTimelineItem = styled.li`
 
   &:hover {
     & ${StyledMarker} {
-      background-color: #fff;
+      background-color: ${({ theme }) => theme.color.primary};
+
+      &::after {
+        width: ${markerWidth + 5}px;
+        height: ${markerWidth + 5}px;
+        opacity: 1;
+      }
     }
   }
 `;

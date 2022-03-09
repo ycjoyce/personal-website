@@ -8,7 +8,7 @@ export const StyledMenuItem = styled.li`
   cursor: pointer;
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   & ${StyledArrow} {

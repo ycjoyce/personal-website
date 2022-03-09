@@ -18,6 +18,11 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
     { hide = false, menu, menuOpened = false, onHamburgerClick = () => {} },
     ref
   ) => {
+    const handleContact = () => {
+      const recipient = "yeechiajoyce@gmail.com";
+      window.location.href = `mailto:${recipient}`;
+    };
+
     return (
       <StyledHeader ref={ref} hide={hide}>
         <Blotter text="Jc" fontSize={40}></Blotter>
@@ -25,8 +30,13 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
         <StyledOperateBox>
           <Menu items={menu} opened={menuOpened} />
 
-          <Button outline size="sm" color={theme.color.primary}>
-            Resume
+          <Button
+            outline
+            size="sm"
+            color={theme.color.primary}
+            onClick={handleContact}
+          >
+            Contact Me
           </Button>
 
           <Hamburger
@@ -35,8 +45,6 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
             onClick={onHamburgerClick}
           />
         </StyledOperateBox>
-
-        {/* {menuOpened && <Menu items={menu} />} */}
       </StyledHeader>
     );
   }

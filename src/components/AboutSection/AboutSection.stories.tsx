@@ -9,3 +9,8 @@ export default {
 const Template: Story<AboutSectionProps> = (args) => <AboutSection {...args} />;
 
 export const Default = Template.bind({});
+Default.args = {
+  content: "Hello\nWorld",
+  imageOne: require("../../images/about_background.jpg"),
+  imageTwo: require("../../images/about_background.jpg"),
+};

@@ -50,7 +50,6 @@ const VideoSlider = forwardRef<Splide, VideoSliderProps>(
           destroy: true,
         }}
         onMove={handleMove}
-        onDestroy={() => console.log("destroy video slider")}
       >
         {renderItems(items)}
       </Splide>

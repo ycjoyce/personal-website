@@ -69,6 +69,7 @@ export const StyledBlotterBox = styled.div`
     top: 50%;
     right: 0%;
     font-size: ${({ theme }) => theme.font[1]};
+    line-height: ${({ theme }) => theme.font[1]};
     font-style: italic;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;

@@ -149,6 +149,7 @@ const StyledProject = styled.div<StyledProjectProps>`
           top: 0;
           right: 0;
           font-size: 4rem;
+          line-height: 4rem;
           background: -webkit-linear-gradient(
             ${({ theme }) => theme.color.primary} 50%,
             #fff 50% 100%

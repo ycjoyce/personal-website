@@ -7,16 +7,14 @@ const StyledTitle = styled.div<{
   color: string;
 }>`
   margin: 0;
-  font-size: ${({ theme, size, primary = false }) =>
-    primary ? "5rem" : theme.font[size]};
-  color: ${({ color }) => color};
-  ${({ primary = false }) => {
-    if (primary) {
-      return css`
-        font-style: italic;
-      `;
-    }
-    return "";
+  ${({ theme, size, primary = false, color }) => {
+    const fontSize = primary ? 5 : parseFloat(theme.font[size]);
+    return css`
+      font-size: ${fontSize}rem;
+      line-height: ${fontSize * 1.1}rem;
+      color: ${color};
+      font-style: ${primary ? "italic" : "normal"};
+    `;
   }}
 `;
 

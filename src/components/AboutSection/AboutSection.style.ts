@@ -17,35 +17,39 @@ const StyledAboutSection = styled.section`
 export const StyledImagesBox = styled.div`
   flex: 1 1 auto;
   width: 0;
+  height: 400px;
   position: relative;
+  /*display: flex;*/
 
-  & .simpleParallax {
+  /*& .parallax {
     display: inline-block;
 
     img {
       width: 100%;
     }
-  }
+  }*/
 
-  & .simpleParallax:first-child {
+  /*& .parallax:first-child {
     width: 70%;
   }
 
-  & .simpleParallax:last-child {
-    width: 50%;
+  & .parallax:last-child {
+    width: 30%;
     position: absolute;
-    right: -20px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
-  }
+  }*/
 
   ${({ theme }) => {
     return css`
       ${breakpointDown(theme.breakpoints.md)} {
         width: 100%;
+        height: 300px;
 
-        & .simpleParallax:last-child {
-          right: 0;
+        & .parallax:last-child {
+          width: 40% !important;
+          right: 0 !important;
         }
       }
     `;
