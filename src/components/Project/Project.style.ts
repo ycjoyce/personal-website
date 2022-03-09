@@ -182,7 +182,7 @@ const StyledProject = styled.div<StyledProjectProps>`
           }
 
           ${breakpointDown(theme.breakpoints.md)} {
-            height: 0;
+            /* height: 0; */
             width: 100%;
             margin: 0 0 30px 0;
           }

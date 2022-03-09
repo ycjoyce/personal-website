@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import StyledHeader from "../Header/Header.style";
+import { StyledHeaderBox } from "../Header/Header.style";
 import { breakpointDown } from "../../styles/abstracts/mixins";
 
 export const StyledWrapper = styled.div`
@@ -23,7 +23,7 @@ const StyledApp = styled.div`
     margin: 150px 0;
   }
 
-  & ${StyledHeader} {
+  & ${StyledHeaderBox} {
     position: fixed;
     top: 0;
     left: 0;
