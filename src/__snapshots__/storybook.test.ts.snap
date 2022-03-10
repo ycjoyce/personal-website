@@ -166,7 +166,7 @@ exports[`Storyshots Lightbox Default 1`] = `
                 <video
                   autoPlay={true}
                   controls={true}
-                  data-id="4597c6a7-b5d7-4d6e-9603-ae8b1c1ff107"
+                  data-id="719f67ff-12f7-4d3f-adc9-e8fcb9a172eb"
                   playsInline={true}
                   poster="https://source.unsplash.com/collection/190727/1600x900"
                   src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
@@ -182,7 +182,7 @@ exports[`Storyshots Lightbox Default 1`] = `
                 <video
                   autoPlay={true}
                   controls={true}
-                  data-id="14d86f3d-89f6-4cbb-9be4-1b5cd20843ec"
+                  data-id="ff16aa5e-f1cb-4678-b211-d2441f66811b"
                   playsInline={true}
                   poster="https://source.unsplash.com/collection/190726/1600x900"
                   src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
@@ -198,7 +198,7 @@ exports[`Storyshots Lightbox Default 1`] = `
                 <video
                   autoPlay={true}
                   controls={true}
-                  data-id="4277a5c7-fe6e-4445-ad6a-eac8f0953988"
+                  data-id="d06a0f71-4e83-4ee3-9c54-0b34eddad945"
                   playsInline={true}
                   poster="https://source.unsplash.com/collection/190726/1600x900"
                   src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
@@ -2894,7 +2894,7 @@ exports[`Storyshots ThumbnailSlider Default 1`] = `
             <video
               autoPlay={true}
               controls={true}
-              data-id="547f0d0f-8cce-400f-8ea0-e15a1162ef05"
+              data-id="006c8029-286e-4754-9057-e0a0a968d910"
               playsInline={true}
               poster="https://source.unsplash.com/collection/190727/1600x900"
               src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
@@ -2910,7 +2910,7 @@ exports[`Storyshots ThumbnailSlider Default 1`] = `
             <video
               autoPlay={true}
               controls={true}
-              data-id="1f587bd2-46f3-46a4-b936-83fe76e9fc02"
+              data-id="24c8ca7f-03b0-4637-b44b-56f3b1528099"
               playsInline={true}
               poster="https://source.unsplash.com/collection/190726/1600x900"
               src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
@@ -2926,7 +2926,7 @@ exports[`Storyshots ThumbnailSlider Default 1`] = `
             <video
               autoPlay={true}
               controls={true}
-              data-id="6413ac1d-ff86-4236-a4f8-b10738dd6522"
+              data-id="63a596e9-ea02-49bd-82f0-5cab398839fd"
               playsInline={true}
               poster="https://source.unsplash.com/collection/190726/1600x900"
               src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
@@ -3175,7 +3175,7 @@ exports[`Storyshots VideoSlideItem Default 1`] = `
     <video
       autoPlay={true}
       controls={true}
-      data-id="21b668a7-02d6-40ab-8626-e738e3e1f224"
+      data-id="e15ddfbb-1898-4d23-9ebf-25c2f18e3ca4"
       playsInline={true}
       poster="https://picsum.photos/200/300"
       src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -3218,7 +3218,7 @@ exports[`Storyshots VideoSlider Default 1`] = `
           <video
             autoPlay={true}
             controls={true}
-            data-id="0a416cf6-0072-436a-8129-36817fe63230"
+            data-id="1fdac6d9-56db-48b5-8358-aad8b397b1af"
             playsInline={true}
             poster="https://source.unsplash.com/collection/190727/1600x900"
             src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -3246,7 +3246,7 @@ exports[`Storyshots VideoSlider Default 1`] = `
           <video
             autoPlay={true}
             controls={true}
-            data-id="a7640b2f-0889-4131-9b3c-4fb039832061"
+            data-id="bb7d108d-d8b2-4fd2-95e7-f86c20396f34"
             playsInline={true}
             poster="https://source.unsplash.com/collection/190727/1600x900"
             src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -3262,7 +3262,7 @@ exports[`Storyshots VideoSlider Default 1`] = `
           <video
             autoPlay={true}
             controls={true}
-            data-id="609a68eb-79eb-447e-be73-600138eae87c"
+            data-id="b14e7a03-add4-4432-bfef-c461259fd5db"
             playsInline={true}
             poster="https://source.unsplash.com/collection/190727/1600x900"
             src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
