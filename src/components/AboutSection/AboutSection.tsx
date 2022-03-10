@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Title from "../Title/Title";
 import Parallax from "../Parallax/Parallax";
-import { Parallax as ScrollParallax } from "react-scroll-parallax";
+// import { Parallax as ScrollParallax } from "react-scroll-parallax";
 import StyledAboutSection, {
   StyledImagesBox,
   StyledArticle,
@@ -46,11 +46,11 @@ const AboutSection: FC<AboutSectionProps> = ({
       </StyledImagesBox>
 
       <StyledArticle>
-        <ScrollParallax speed={2} translateX={["20px", "0px"]}>
-          <Title level={2} primary>
-            About
-          </Title>
-        </ScrollParallax>
+        {/* <ScrollParallax speed={2} translateX={["20px", "0px"]}> */}
+        <Title level={2} primary>
+          About
+        </Title>
+        {/* </ScrollParallax> */}
         {content.split("\n").map((e, i) => (
           <p key={`${e}${i}`}>{e}</p>
         ))}

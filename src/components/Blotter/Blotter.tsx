@@ -23,7 +23,7 @@ export interface BlotterProps {
 }
 
 const Blotter: FC<BlotterProps> = (props) => {
-  return (
+  return window.Blotter ? (
     <SplitColorChannelText
       fontSize={120}
       rotation={45}
@@ -33,6 +33,8 @@ const Blotter: FC<BlotterProps> = (props) => {
       fontFamily="'EB Garamond', serif"
       {...props}
     />
+  ) : (
+    <></>
   );
 };
 

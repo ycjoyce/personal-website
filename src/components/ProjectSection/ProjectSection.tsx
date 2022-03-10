@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { Parallax } from "react-scroll-parallax";
+// import { Parallax } from "react-scroll-parallax";
 import ProjectList from "../ProjectList/ProjectList";
 import Project, { ProjectProps } from "../Project/Project";
 import Title from "../Title/Title";
@@ -47,11 +47,11 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
       )}
 
       <StyledProjectsBox>
-        <Parallax speed={2} translateX={["20px", "0px"]}>
-          <Title level={2} primary>
-            Projects
-          </Title>
-        </Parallax>
+        {/* <Parallax speed={2} translateX={["20px", "0px"]}> */}
+        <Title level={2} primary>
+          Projects
+        </Title>
+        {/* </Parallax> */}
 
         <ProjectList
           options={{
@@ -69,9 +69,9 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
       </StyledProjectsBox>
 
       <StyledProjectsBox>
-        <Parallax speed={2} translateX={["10px", "0px"]}>
-          <Title level={2}>More Projects</Title>
-        </Parallax>
+        {/* <Parallax speed={2} translateX={["10px", "0px"]}> */}
+        <Title level={2}>More Projects</Title>
+        {/* </Parallax> */}
 
         <ProjectList
           progress
