@@ -1,5 +1,6 @@
 import { colord } from "colord";
 import styled, { css } from "styled-components";
+import { motion } from "framer-motion";
 import { breakpointDown } from "../../styles/abstracts/mixins";
 import StyledTitle from "../Title/Title.style";
 
@@ -93,7 +94,7 @@ export const StyledList = styled.ul`
   }
 `;
 
-const StyledTimelineItem = styled.li`
+const StyledTimelineItem = styled(motion.li)`
   display: flex;
   align-items: flex-start;
   position: relative;
