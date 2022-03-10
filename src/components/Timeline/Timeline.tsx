@@ -8,27 +8,26 @@ export interface TimelineProps {
 }
 
 const Timeline: FC<TimelineProps> = ({ items }) => {
-  const itemVariants: Variants = {
-    offscreen: {
-      opacity: 0,
-    },
-    onscreen: {
-      opacity: 1,
-      transition: {
-        duration: 1,
-      },
-    },
-  };
-
   const renderItems = (items: TimelineItemProps[]) => {
-    return items.map((item) => (
+    return items.map((item, i) => (
       <TimelineItem
         {...item}
         key={item.title}
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}
-        variants={itemVariants}
+        variants={{
+          offscreen: {
+            opacity: 0,
+          },
+          onscreen: {
+            opacity: 1,
+            transition: {
+              duration: 1,
+              delay: i * 0.3,
+            },
+          },
+        }}
       />
     ));
   };

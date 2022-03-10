@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components";
+import { motion } from "framer-motion";
 import StyledArrow from "../Arrow/Arrow.style";
 import { breakpointUp } from "../../styles/abstracts/mixins";
 
-export const StyledMenuItem = styled.li`
+export const StyledMenuItem = styled(motion.li)`
   display: flex;
   align-items: center;
   cursor: pointer;

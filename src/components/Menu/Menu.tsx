@@ -14,8 +14,26 @@ export interface MenuProps {
 
 const Menu: FC<MenuProps> = ({ opened = false, items }) => {
   const renderItems = (items: MenuProps["items"]) => {
-    return items.map(({ title, onClick }) => (
-      <StyledMenuItem key={title} onClick={() => onClick(title)}>
+    return items.map(({ title, onClick }, i) => (
+      <StyledMenuItem
+        key={title}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        variants={{
+          offscreen: {
+            y: -10,
+          },
+          onscreen: {
+            y: 0,
+            transition: {
+              duration: 0.3,
+              delay: i * 0.2,
+            },
+          },
+        }}
+        onClick={() => onClick(title)}
+      >
         {title}
         <Arrow direction="right" color="#fff" length={"50px"} />
       </StyledMenuItem>
