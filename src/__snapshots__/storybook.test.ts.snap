@@ -1,0 +1,3287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Arrow Default 1`] = `
+<div
+  style={
+    Object {
+      "marginTop": "100px",
+    }
+  }
+>
+  <div
+    className="sc-eCImPb ezYuwV"
+    color="#333"
+    direction="left"
+  />
+</div>
+`;
+
+exports[`Storyshots Button Default 1`] = `
+<button
+  className="sc-jRQBWg fxYxPZ"
+  color="#fff"
+  onClick={[Function]}
+  size="md"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Hamburger Default 1`] = `
+<button
+  className="sc-fFeiMQ eDFeAg hamburger hamburger--squeeze "
+  color="#333"
+  onClick={[Function]}
+>
+  <span
+    className="hamburger-box"
+  >
+    <span
+      className="hamburger-inner"
+    />
+  </span>
+</button>
+`;
+
+exports[`Storyshots Header Default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#000",
+    }
+  }
+>
+  <div
+    className="sc-dlVxhl iZKylF"
+  >
+    <header
+      className="sc-hGPBjI paYIg"
+    >
+      <div
+        className="sc-kfPuZi bLMGHy"
+      >
+        <button
+          className="sc-jRQBWg hLSzDs"
+          color="#00A4B4"
+          onClick={[Function]}
+          size="sm"
+        >
+          Contact Me
+        </button>
+      </div>
+    </header>
+    <button
+      className="sc-fFeiMQ ukkRG hamburger hamburger--squeeze "
+      color="#b5e254"
+      onClick={[Function]}
+    >
+      <span
+        className="hamburger-box"
+      >
+        <span
+          className="hamburger-inner"
+        />
+      </span>
+    </button>
+    <div
+      className="sc-dJjYzT efwMMj"
+    >
+      <ul
+        className="sc-ieecCq ndflo"
+      >
+        <li
+          className="sc-bkkeKt cvpePy"
+          onClick={[Function]}
+        >
+          First
+          <div
+            className="sc-eCImPb epvEPp"
+            color="#fff"
+            direction="right"
+          />
+        </li>
+        <li
+          className="sc-bkkeKt cvpePy"
+          onClick={[Function]}
+        >
+          Second
+          <div
+            className="sc-eCImPb epvEPp"
+            color="#fff"
+            direction="right"
+          />
+        </li>
+        <li
+          className="sc-bkkeKt cvpePy"
+          onClick={[Function]}
+        >
+          Third
+          <div
+            className="sc-eCImPb epvEPp"
+            color="#fff"
+            direction="right"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Lightbox Default 1`] = `
+<div
+  className="sc-jcFjpl cieBdJ"
+>
+  <div
+    className="sc-gWXbKe jeQwVw"
+    onClick={[Function]}
+  />
+  <div
+    className="sc-cidDSM fhAZpO"
+  >
+    <button
+      className="sc-cCcXHH cJEgcn"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-times"
+      />
+    </button>
+    <div>
+      <div
+        className="splide"
+      >
+        <div
+          className="splide__track"
+        >
+          <ul
+            className="splide__list"
+          >
+            <li
+              className="splide__slide"
+            >
+              <div
+                className="sc-caiLqq fmDXQf"
+              >
+                <video
+                  autoPlay={true}
+                  controls={true}
+                  data-id="4597c6a7-b5d7-4d6e-9603-ae8b1c1ff107"
+                  playsInline={true}
+                  poster="https://source.unsplash.com/collection/190727/1600x900"
+                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+                />
+              </div>
+            </li>
+            <li
+              className="splide__slide"
+            >
+              <div
+                className="sc-caiLqq fmDXQf"
+              >
+                <video
+                  autoPlay={true}
+                  controls={true}
+                  data-id="14d86f3d-89f6-4cbb-9be4-1b5cd20843ec"
+                  playsInline={true}
+                  poster="https://source.unsplash.com/collection/190726/1600x900"
+                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+                />
+              </div>
+            </li>
+            <li
+              className="splide__slide"
+            >
+              <div
+                className="sc-caiLqq fmDXQf"
+              >
+                <video
+                  autoPlay={true}
+                  controls={true}
+                  data-id="4277a5c7-fe6e-4445-ad6a-eac8f0953988"
+                  playsInline={true}
+                  poster="https://source.unsplash.com/collection/190726/1600x900"
+                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+                />
+              </div>
+            </li>
+            <li
+              className="splide__slide"
+            >
+              <div
+                className="sc-caiLqq a-DJQt"
+              >
+                <img
+                  alt=""
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        className="splide"
+      >
+        <div
+          className="splide__track"
+        >
+          <ul
+            className="splide__list"
+          >
+            <li
+              className="splide__slide"
+            >
+              <div
+                className="sc-bBHxTw eurlfr"
+                color="#00A4B4"
+              >
+                video
+              </div>
+              <img
+                alt=""
+                src="https://source.unsplash.com/collection/190727/1600x900"
+              />
+            </li>
+            <li
+              className="splide__slide"
+            >
+              <div
+                className="sc-bBHxTw eurlfr"
+                color="#00A4B4"
+              >
+                video
+              </div>
+              <img
+                alt=""
+                src="https://source.unsplash.com/collection/190726/1600x900"
+              />
+            </li>
+            <li
+              className="splide__slide"
+            >
+              <div
+                className="sc-bBHxTw eurlfr"
+                color="#00A4B4"
+              >
+                video
+              </div>
+              <img
+                alt=""
+                src="https://source.unsplash.com/collection/190726/1600x900"
+              />
+            </li>
+            <li
+              className="splide__slide"
+            >
+              <img
+                alt=""
+                src="https://source.unsplash.com/collection/190727/1600x900"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Link Default 1`] = `
+<a
+  className="sc-fKVqWL fKSRPG"
+  color="#fff"
+  href="https://google.com"
+  target="_blank"
+>
+  <i
+    className="fa fa-link"
+  />
+  test
+</a>
+`;
+
+exports[`Storyshots Menu Default 1`] = `
+<div
+  className="sc-dJjYzT efwMMj"
+>
+  <ul
+    className="sc-ieecCq ndflo"
+  >
+    <li
+      className="sc-bkkeKt cvpePy"
+      onClick={[Function]}
+    >
+      About
+      <div
+        className="sc-eCImPb epvEPp"
+        color="#fff"
+        direction="right"
+      />
+    </li>
+    <li
+      className="sc-bkkeKt cvpePy"
+      onClick={[Function]}
+    >
+      Projects
+      <div
+        className="sc-eCImPb epvEPp"
+        color="#fff"
+        direction="right"
+      />
+    </li>
+    <li
+      className="sc-bkkeKt cvpePy"
+      onClick={[Function]}
+    >
+      Experience
+      <div
+        className="sc-eCImPb epvEPp"
+        color="#fff"
+        direction="right"
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Pill Default 1`] = `
+<div
+  className="sc-bBHxTw ekJeJ"
+  color="transparent"
+>
+  test
+</div>
+`;
+
+exports[`Storyshots Project Default 1`] = `
+<div
+  className="sc-hiCibw haQYYr"
+  data-year="2022"
+>
+  <div
+    className="sc-giYglK kNYhGd"
+  >
+    <img
+      alt="模擬付款流程網站"
+      src="https://media-exp1.licdn.com/dms/image/C4E1BAQEu7nDBxY2KXw/company-background_10000/0/1556122971779?e=2159024400&v=beta&t=-oR_B0gCjXcLUObiGLx7lbA5KwVibKY5xIRsgE_n7b4"
+    />
+    <div
+      className="sc-ikJyIC"
+    >
+      2022
+    </div>
+    <div
+      className="sc-llYSUQ bXsmMC"
+    >
+      <h3
+        className="sc-bdvvtL iNJcuC"
+        color="#333"
+        size={5}
+      >
+        模擬付款流程網站
+      </h3>
+      
+    </div>
+  </div>
+  <div
+    className="sc-ezbkAF dtTAfI"
+  >
+    <div
+      className="sc-cxpSdN inFNGt"
+    />
+    <div>
+      <p
+        className="sc-bYoBSM bZWFwp"
+      >
+        撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal 渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+      </p>
+    </div>
+    <div
+      className="sc-kLwhqv hotUsH"
+    >
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        HTML
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        CSS
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        JavaScript
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        Express
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        MongoDB
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        React
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        SCSS
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Project Links 1`] = `
+<div
+  className="sc-hiCibw haQYYr"
+  data-year="2022"
+>
+  <div
+    className="sc-giYglK kNYhGd"
+  >
+    <img
+      alt="模擬付款流程網站"
+      src="https://media-exp1.licdn.com/dms/image/C4E1BAQEu7nDBxY2KXw/company-background_10000/0/1556122971779?e=2159024400&v=beta&t=-oR_B0gCjXcLUObiGLx7lbA5KwVibKY5xIRsgE_n7b4"
+    />
+    <div
+      className="sc-ikJyIC"
+    >
+      2022
+    </div>
+    <div
+      className="sc-llYSUQ bXsmMC"
+    >
+      <h3
+        className="sc-bdvvtL iNJcuC"
+        color="#333"
+        size={5}
+      >
+        模擬付款流程網站
+      </h3>
+      
+    </div>
+  </div>
+  <div
+    className="sc-ezbkAF dtTAfI"
+  >
+    <div
+      className="sc-cxpSdN inFNGt"
+    >
+      <a
+        className="sc-fKVqWL bblSsC"
+        color="#00A4B4"
+        href="https://ycjoyce.github.io/react-pomodoro/"
+        target="_blank"
+      >
+        <i
+          className="fa fa-link"
+        />
+        Demo
+      </a>
+      <a
+        className="sc-fKVqWL bblSsC"
+        color="#00A4B4"
+        href="https://github.com/ycjoyce/react-pomodoro"
+        target="_blank"
+      >
+        <i
+          className="fab fa-github"
+        />
+        Github
+      </a>
+    </div>
+    <div>
+      <p
+        className="sc-bYoBSM bZWFwp"
+      >
+        撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal 渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+      </p>
+    </div>
+    <div
+      className="sc-kLwhqv hotUsH"
+    >
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        HTML
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        CSS
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        JavaScript
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        Express
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        MongoDB
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        React
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        SCSS
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Project More 1`] = `
+<div
+  className="sc-hiCibw dHIPnu"
+  data-year="2022"
+>
+  <div
+    className="sc-giYglK kNYhGd"
+  >
+    <img
+      alt="模擬付款流程網站"
+      src="https://media-exp1.licdn.com/dms/image/C4E1BAQEu7nDBxY2KXw/company-background_10000/0/1556122971779?e=2159024400&v=beta&t=-oR_B0gCjXcLUObiGLx7lbA5KwVibKY5xIRsgE_n7b4"
+    />
+    <div
+      className="sc-ikJyIC"
+    >
+      2022
+    </div>
+    <div
+      className="sc-llYSUQ bXsmMC"
+    >
+      <h3
+        className="sc-bdvvtL iNJcuC"
+        color="#333"
+        size={5}
+      >
+        模擬付款流程網站
+      </h3>
+      
+    </div>
+    <div
+      className="sc-iJKOTD cZpNzu"
+      onClick={[Function]}
+    >
+      View More
+    </div>
+  </div>
+  <div
+    className="sc-ezbkAF dtTAfI"
+  >
+    <div
+      className="sc-cxpSdN inFNGt"
+    />
+    <div>
+      <p
+        className="sc-bYoBSM bZWFwp"
+      >
+        撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal 渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+      </p>
+    </div>
+    <div
+      className="sc-kLwhqv hotUsH"
+    >
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        HTML
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        CSS
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        JavaScript
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        Express
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        MongoDB
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        React
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+        color="#eee"
+      >
+        # 
+        SCSS
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Project Primary 1`] = `
+<div
+  className="sc-hiCibw fYwZsc"
+  data-year="2022"
+>
+  <p
+    className="sc-jJoQJp"
+  >
+    
+  </p>
+  <div
+    className="sc-ikJyIC"
+  >
+    2022
+  </div>
+  <div
+    className="sc-giYglK kNYhGd"
+  >
+    <img
+      alt="模擬付款流程網站"
+      src="mac.png"
+    />
+  </div>
+  <div
+    className="sc-ezbkAF dtTAfI"
+  >
+    <h3
+      className="sc-bdvvtL kfGFVo"
+      color="#333"
+      size={3}
+    >
+      模擬付款流程網站
+    </h3>
+    <div
+      className="sc-cxpSdN inFNGt"
+    />
+    <div>
+      <p
+        className="sc-bYoBSM bZWFwp"
+      >
+        撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal 渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+      </p>
+    </div>
+    <div
+      className="sc-kLwhqv hotUsH"
+    >
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        HTML
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        CSS
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        JavaScript
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        Express
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        MongoDB
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        React
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        SCSS
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Project Primary Links 1`] = `
+<div
+  className="sc-hiCibw fYwZsc"
+  data-year="2022"
+>
+  <p
+    className="sc-jJoQJp"
+  >
+    
+  </p>
+  <div
+    className="sc-ikJyIC"
+  >
+    2022
+  </div>
+  <div
+    className="sc-giYglK kNYhGd"
+  >
+    <img
+      alt="模擬付款流程網站"
+      src="mac.png"
+    />
+  </div>
+  <div
+    className="sc-ezbkAF dtTAfI"
+  >
+    <h3
+      className="sc-bdvvtL kfGFVo"
+      color="#333"
+      size={3}
+    >
+      模擬付款流程網站
+    </h3>
+    <div
+      className="sc-cxpSdN inFNGt"
+    >
+      <a
+        className="sc-fKVqWL fKSRPG"
+        color="#fff"
+        href="https://ycjoyce.github.io/react-pomodoro/"
+        target="_blank"
+      >
+        <i
+          className="fa fa-link"
+        />
+        Demo
+      </a>
+      <a
+        className="sc-fKVqWL fKSRPG"
+        color="#fff"
+        href="https://github.com/ycjoyce/react-pomodoro"
+        target="_blank"
+      >
+        <i
+          className="fab fa-github"
+        />
+        Github
+      </a>
+    </div>
+    <div>
+      <p
+        className="sc-bYoBSM bZWFwp"
+      >
+        撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal 渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+      </p>
+    </div>
+    <div
+      className="sc-kLwhqv hotUsH"
+    >
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        HTML
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        CSS
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        JavaScript
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        Express
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        MongoDB
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        React
+      </div>
+      <div
+        className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+        color="rgba(255,255,255,0.7)"
+      >
+        # 
+        SCSS
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ProjectList Default 1`] = `
+Array [
+  <div
+    className="splide"
+  >
+    <div
+      className="splide__track"
+    >
+      <ul
+        className="splide__list"
+      >
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-hiCibw haQYYr"
+            data-year="2022"
+          >
+            <div
+              className="sc-giYglK kNYhGd"
+            >
+              <img
+                alt="Project2"
+                src="https://www.petage.com/wp-content/uploads/2019/09/Depositphotos_74974941_xl-2015-e1569443284386.jpg"
+              />
+              <div
+                className="sc-ikJyIC"
+              >
+                2022
+              </div>
+              <div
+                className="sc-llYSUQ bXsmMC"
+              >
+                <h3
+                  className="sc-bdvvtL iNJcuC"
+                  color="#333"
+                  size={5}
+                >
+                  Project2
+                </h3>
+                
+              </div>
+            </div>
+            <div
+              className="sc-ezbkAF dtTAfI"
+            >
+              <div
+                className="sc-cxpSdN inFNGt"
+              />
+              <div>
+                <p
+                  className="sc-bYoBSM bZWFwp"
+                >
+                  這是第二個案件
+                </p>
+              </div>
+              <div
+                className="sc-kLwhqv hotUsH"
+              >
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  CSS
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  Express
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  MongoDB
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-hiCibw haQYYr"
+            data-year="2022"
+          >
+            <div
+              className="sc-giYglK kNYhGd"
+            >
+              <img
+                alt="Project3"
+                src="https://www.vets4pets.com/siteassets/species/cat/kitten/cat-and-kitten-snuggling.jpg?width=1040"
+              />
+              <div
+                className="sc-ikJyIC"
+              >
+                2022
+              </div>
+              <div
+                className="sc-llYSUQ bXsmMC"
+              >
+                <h3
+                  className="sc-bdvvtL iNJcuC"
+                  color="#333"
+                  size={5}
+                >
+                  Project3
+                </h3>
+                
+              </div>
+            </div>
+            <div
+              className="sc-ezbkAF dtTAfI"
+            >
+              <div
+                className="sc-cxpSdN inFNGt"
+              />
+              <div>
+                <p
+                  className="sc-bYoBSM bZWFwp"
+                >
+                  這是第三個案件
+                </p>
+              </div>
+              <div
+                className="sc-kLwhqv hotUsH"
+              >
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  CSS
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  Express
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  MongoDB
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-hiCibw haQYYr"
+            data-year="2019"
+          >
+            <div
+              className="sc-giYglK kNYhGd"
+            >
+              <img
+                alt="Project4"
+                src="https://valevets.com/wp-content/uploads/2014/08/kitten1.jpg"
+              />
+              <div
+                className="sc-ikJyIC"
+              >
+                2019
+              </div>
+              <div
+                className="sc-llYSUQ bXsmMC"
+              >
+                <h3
+                  className="sc-bdvvtL iNJcuC"
+                  color="#333"
+                  size={5}
+                >
+                  Project4
+                </h3>
+                
+              </div>
+            </div>
+            <div
+              className="sc-ezbkAF dtTAfI"
+            >
+              <div
+                className="sc-cxpSdN inFNGt"
+              />
+              <div>
+                <p
+                  className="sc-bYoBSM bZWFwp"
+                >
+                  這是第四個案件
+                </p>
+              </div>
+              <div
+                className="sc-kLwhqv hotUsH"
+              >
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  CSS
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  Express
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  MongoDB
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-hiCibw haQYYr"
+            data-year="2019"
+          >
+            <div
+              className="sc-giYglK kNYhGd"
+            >
+              <img
+                alt="Project5"
+                src="https://media.istockphoto.com/photos/gray-british-cat-kitten-picture-id1086004080?k=20&m=1086004080&s=612x612&w=0&h=tvQKNjBGIsfCmUPR8YVJYfjLrTZ9JINbisKRjMj87IY="
+              />
+              <div
+                className="sc-ikJyIC"
+              >
+                2019
+              </div>
+              <div
+                className="sc-llYSUQ bXsmMC"
+              >
+                <h3
+                  className="sc-bdvvtL iNJcuC"
+                  color="#333"
+                  size={5}
+                >
+                  Project5
+                </h3>
+                
+              </div>
+            </div>
+            <div
+              className="sc-ezbkAF dtTAfI"
+            >
+              <div
+                className="sc-cxpSdN inFNGt"
+              />
+              <div>
+                <p
+                  className="sc-bYoBSM bZWFwp"
+                >
+                  這是第五個案件
+                </p>
+              </div>
+              <div
+                className="sc-kLwhqv hotUsH"
+              >
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  CSS
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  Express
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  MongoDB
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-hiCibw haQYYr"
+            data-year="2018"
+          >
+            <div
+              className="sc-giYglK kNYhGd"
+            >
+              <img
+                alt="Project1"
+                src="https://media-exp1.licdn.com/dms/image/C4E1BAQEu7nDBxY2KXw/company-background_10000/0/1556122971779?e=2159024400&v=beta&t=-oR_B0gCjXcLUObiGLx7lbA5KwVibKY5xIRsgE_n7b4"
+              />
+              <div
+                className="sc-ikJyIC"
+              >
+                2018
+              </div>
+              <div
+                className="sc-llYSUQ bXsmMC"
+              >
+                <h3
+                  className="sc-bdvvtL iNJcuC"
+                  color="#333"
+                  size={5}
+                >
+                  Project1
+                </h3>
+                
+              </div>
+            </div>
+            <div
+              className="sc-ezbkAF dtTAfI"
+            >
+              <div
+                className="sc-cxpSdN inFNGt"
+              />
+              <div>
+                <p
+                  className="sc-bYoBSM bZWFwp"
+                >
+                  這是第一個案件
+                </p>
+              </div>
+              <div
+                className="sc-kLwhqv hotUsH"
+              >
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  CSS
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  Express
+                </div>
+                <div
+                  className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                  color="#eee"
+                >
+                  # 
+                  MongoDB
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="my-slider-progress-box"
+  >
+    <div
+      className="my-slider-progress"
+    >
+      <div
+        className="my-slider-progress-bar"
+      />
+    </div>
+    <div
+      className="my-slider-progress-years"
+    >
+      <span>
+        2022
+      </span>
+      <span>
+        2018
+      </span>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots ProjectList Primary 1`] = `
+<div
+  className="splide"
+>
+  <div
+    className="splide__track"
+  >
+    <ul
+      className="splide__list"
+    >
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-hiCibw fYwZsc"
+          data-year="2022"
+        >
+          <p
+            className="sc-jJoQJp"
+          >
+            
+          </p>
+          <div
+            className="sc-ikJyIC"
+          >
+            2022
+          </div>
+          <div
+            className="sc-giYglK kNYhGd"
+          >
+            <img
+              alt="Project1"
+              src="mac.png"
+            />
+          </div>
+          <div
+            className="sc-ezbkAF dtTAfI"
+          >
+            <h3
+              className="sc-bdvvtL kfGFVo"
+              color="#333"
+              size={3}
+            >
+              Project1
+            </h3>
+            <div
+              className="sc-cxpSdN inFNGt"
+            />
+            <div>
+              <p
+                className="sc-bYoBSM bZWFwp"
+              >
+                這是第一個案件
+              </p>
+            </div>
+            <div
+              className="sc-kLwhqv hotUsH"
+            >
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                CSS
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                Express
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                MongoDB
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-hiCibw fYwZsc"
+          data-year="2022"
+        >
+          <p
+            className="sc-jJoQJp"
+          >
+            
+          </p>
+          <div
+            className="sc-ikJyIC"
+          >
+            2022
+          </div>
+          <div
+            className="sc-giYglK kNYhGd"
+          >
+            <img
+              alt="Project2"
+              src="mac.png"
+            />
+          </div>
+          <div
+            className="sc-ezbkAF dtTAfI"
+          >
+            <h3
+              className="sc-bdvvtL kfGFVo"
+              color="#333"
+              size={3}
+            >
+              Project2
+            </h3>
+            <div
+              className="sc-cxpSdN inFNGt"
+            />
+            <div>
+              <p
+                className="sc-bYoBSM bZWFwp"
+              >
+                這是第二個案件
+              </p>
+            </div>
+            <div
+              className="sc-kLwhqv hotUsH"
+            >
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                CSS
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                Express
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                MongoDB
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-hiCibw fYwZsc"
+          data-year="2022"
+        >
+          <p
+            className="sc-jJoQJp"
+          >
+            
+          </p>
+          <div
+            className="sc-ikJyIC"
+          >
+            2022
+          </div>
+          <div
+            className="sc-giYglK kNYhGd"
+          >
+            <img
+              alt="Project3"
+              src="mac.png"
+            />
+          </div>
+          <div
+            className="sc-ezbkAF dtTAfI"
+          >
+            <h3
+              className="sc-bdvvtL kfGFVo"
+              color="#333"
+              size={3}
+            >
+              Project3
+            </h3>
+            <div
+              className="sc-cxpSdN inFNGt"
+            />
+            <div>
+              <p
+                className="sc-bYoBSM bZWFwp"
+              >
+                這是第三個案件
+              </p>
+            </div>
+            <div
+              className="sc-kLwhqv hotUsH"
+            >
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                CSS
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                Express
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                MongoDB
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-hiCibw fYwZsc"
+          data-year="2022"
+        >
+          <p
+            className="sc-jJoQJp"
+          >
+            
+          </p>
+          <div
+            className="sc-ikJyIC"
+          >
+            2022
+          </div>
+          <div
+            className="sc-giYglK kNYhGd"
+          >
+            <img
+              alt="Project4"
+              src="mac.png"
+            />
+          </div>
+          <div
+            className="sc-ezbkAF dtTAfI"
+          >
+            <h3
+              className="sc-bdvvtL kfGFVo"
+              color="#333"
+              size={3}
+            >
+              Project4
+            </h3>
+            <div
+              className="sc-cxpSdN inFNGt"
+            />
+            <div>
+              <p
+                className="sc-bYoBSM bZWFwp"
+              >
+                這是第四個案件
+              </p>
+            </div>
+            <div
+              className="sc-kLwhqv hotUsH"
+            >
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                CSS
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                Express
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                MongoDB
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-hiCibw fYwZsc"
+          data-year="2022"
+        >
+          <p
+            className="sc-jJoQJp"
+          >
+            
+          </p>
+          <div
+            className="sc-ikJyIC"
+          >
+            2022
+          </div>
+          <div
+            className="sc-giYglK kNYhGd"
+          >
+            <img
+              alt="Project5"
+              src="mac.png"
+            />
+          </div>
+          <div
+            className="sc-ezbkAF dtTAfI"
+          >
+            <h3
+              className="sc-bdvvtL kfGFVo"
+              color="#333"
+              size={3}
+            >
+              Project5
+            </h3>
+            <div
+              className="sc-cxpSdN inFNGt"
+            />
+            <div>
+              <p
+                className="sc-bYoBSM bZWFwp"
+              >
+                這是第五個案件
+              </p>
+            </div>
+            <div
+              className="sc-kLwhqv hotUsH"
+            >
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                CSS
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                Express
+              </div>
+              <div
+                className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                color="rgba(255,255,255,0.7)"
+              >
+                # 
+                MongoDB
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Sections/AboutSection Default 1`] = `
+<section
+  className="sc-gsDKAQ kLPagY"
+  id="about"
+>
+  <div
+    className="sc-dkPtRN lNYt"
+  >
+    <div
+      className="parallax"
+      style={
+        Object {
+          "display": "inline-block",
+          "height": "100%",
+          "overflow": "hidden",
+          "position": "relative",
+          "width": "70%",
+        }
+      }
+    />
+    <div
+      className="parallax"
+      style={
+        Object {
+          "display": "inline-block",
+          "height": "80%",
+          "overflow": "hidden",
+          "position": "absolute",
+          "right": "30px",
+          "top": "50%",
+          "transform": "translateY(-50%)",
+          "width": "30%",
+        }
+      }
+    />
+  </div>
+  <article
+    className="sc-hKwDye jySdXr"
+  >
+    <h2
+      className="sc-bdvvtL faWgMv"
+      color="#333"
+      size={2}
+    >
+      About
+    </h2>
+    <p>
+      Hello
+    </p>
+    <p>
+      World
+    </p>
+  </article>
+</section>
+`;
+
+exports[`Storyshots Sections/CoverSection Default 1`] = `
+<div
+  className="sc-pVTFL eqtynb"
+  onMouseMove={[Function]}
+>
+  <div
+    className="sc-iCfMLu background"
+  >
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+  </div>
+  <div
+    className="sc-jrQzAO blvKzK"
+  >
+    <div
+      className="sc-gKclnd fhfVhM"
+      id="j-box"
+      style={
+        Object {
+          "left": "0px",
+          "top": "-50px",
+        }
+      }
+    />
+    <div
+      className="sc-gKclnd fhfVhM"
+      id="o-box"
+      style={
+        Object {
+          "left": "100px",
+          "top": "250px",
+        }
+      }
+    />
+    <div
+      className="sc-gKclnd fhfVhM"
+      id="y-box"
+      style={
+        Object {
+          "left": "300px",
+          "top": "80px",
+        }
+      }
+    />
+    <div
+      className="sc-gKclnd fhfVhM"
+      id="c-box"
+      style={
+        Object {
+          "left": "200px",
+          "top": "-200px",
+        }
+      }
+    />
+    <div
+      className="sc-gKclnd fhfVhM"
+      id="e-box"
+      style={
+        Object {
+          "left": "400px",
+          "top": "350px",
+        }
+      }
+    />
+    <p
+      data-subtitle={true}
+    />
+  </div>
+  <div
+    className="sc-furwcr jTViMT"
+  >
+    <div
+      className="sc-eCImPb jyrVuB"
+      color="#414141"
+      direction="bottom"
+    />
+    <p>
+      SCROLL
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Sections/ExperienceSection Default 1`] = `
+<section
+  className="sc-fotOHu kRmTFc"
+  id="experience"
+>
+  <h2
+    className="sc-bdvvtL faWgMv"
+    color="#333"
+    size={2}
+  >
+    Experience
+  </h2>
+  <ul
+    className="sc-hBUSln hxAiof"
+  >
+    <li
+      className="sc-ksdxgE kXeqJv"
+    >
+      <div
+        className="sc-iqseJM sc-crHmcD xRBbp ipTpLJ"
+      >
+        2020 - present
+      </div>
+      <div
+        className="sc-kDTinF eepVUi"
+      />
+      <div
+        className="sc-iqseJM sc-egiyK xRBbp fzoJMV"
+      >
+        <h6
+          className="sc-bdvvtL ccMpqA"
+          color="#333"
+          size={4}
+        >
+          智趣王數位科技股份有限公司
+        </h6>
+        <ul
+          className="sc-bqiRlB gewUTR"
+        >
+          <li>
+            獨立負責所有前端相關工作
+          </li>
+          <li>
+            前端介面優化，增進使用者體驗及無障礙設計
+          </li>
+          <li>
+            善用打包與語法檢查工具以提升開發效率及程式碼品質
+          </li>
+          <li>
+            與後端工程師協作
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li
+      className="sc-ksdxgE kXeqJv"
+    >
+      <div
+        className="sc-iqseJM sc-crHmcD xRBbp ipTpLJ"
+      >
+        2019 - 2020
+      </div>
+      <div
+        className="sc-kDTinF eepVUi"
+      />
+      <div
+        className="sc-iqseJM sc-egiyK xRBbp fzoJMV"
+      >
+        <h6
+          className="sc-bdvvtL ccMpqA"
+          color="#333"
+          size={4}
+        >
+          資策會 Web App 前端工程課程
+        </h6>
+        <ul
+          className="sc-bqiRlB gewUTR"
+        >
+          <li>
+            學習網頁版面切版、程式撰寫及資料庫串接，以使用者體驗的思維設計網頁操作及互動流程
+          </li>
+          <li>
+            獲選個人專題最佳網站，並擔任團體專題組長與 6 名組員協同開發
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li
+      className="sc-ksdxgE kXeqJv"
+    >
+      <div
+        className="sc-iqseJM sc-crHmcD xRBbp ipTpLJ"
+      >
+        2017 - 2019
+      </div>
+      <div
+        className="sc-kDTinF eepVUi"
+      />
+      <div
+        className="sc-iqseJM sc-egiyK xRBbp fzoJMV"
+      >
+        <h6
+          className="sc-bdvvtL ccMpqA"
+          color="#333"
+          size={4}
+        >
+          雄獅旅行社股份有限公司
+        </h6>
+        <ul
+          className="sc-bqiRlB gewUTR"
+        >
+          <li>
+            旅遊專案主題包裝之創意發想與設計
+          </li>
+          <li>
+            量身訂做企業戶旅遊提案企畫書與提案簡報
+          </li>
+          <li>
+            擅於溝通、規劃及整合，多次參與執行千人以上大規模專案
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li
+      className="sc-ksdxgE kXeqJv"
+    >
+      <div
+        className="sc-iqseJM sc-crHmcD xRBbp ipTpLJ"
+      >
+        2013 - 2017
+      </div>
+      <div
+        className="sc-kDTinF eepVUi"
+      />
+      <div
+        className="sc-iqseJM sc-egiyK xRBbp fzoJMV"
+      >
+        <h6
+          className="sc-bdvvtL ccMpqA"
+          color="#333"
+          size={4}
+        >
+          台灣藝術大學圖文傳播學系
+        </h6>
+        <ul
+          className="sc-bqiRlB gewUTR"
+        >
+          <li>
+            學習設計、印刷、攝影、出版，並活用於作品的製作
+          </li>
+          <li>
+            多次設計作品得獎經歷
+          </li>
+          <li>
+            擔任論文發表會總召，擅於統籌整合
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`Storyshots Sections/ProjectSection Default 1`] = `
+<section
+  className="sc-iAKWXU jFfEqg"
+  id="projects"
+>
+  <div
+    className="sc-iUKqMP"
+  >
+    <h2
+      className="sc-bdvvtL faWgMv"
+      color="#333"
+      size={2}
+    >
+      Projects
+    </h2>
+    <div
+      className="splide"
+    >
+      <div
+        className="splide__track"
+      >
+        <ul
+          className="splide__list"
+        >
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw fYwZsc"
+              data-year="2022"
+            >
+              <p
+                className="sc-jJoQJp"
+              >
+                
+              </p>
+              <div
+                className="sc-ikJyIC"
+              >
+                2022
+              </div>
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="First"
+                  src="https://picsum.photos/300/200"
+                />
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <h3
+                  className="sc-bdvvtL kfGFVo"
+                  color="#333"
+                  size={3}
+                >
+                  First
+                </h3>
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw fYwZsc"
+              data-year="2022"
+            >
+              <p
+                className="sc-jJoQJp"
+              >
+                
+              </p>
+              <div
+                className="sc-ikJyIC"
+              >
+                2022
+              </div>
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="First"
+                  src="https://picsum.photos/300/200"
+                />
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <h3
+                  className="sc-bdvvtL kfGFVo"
+                  color="#333"
+                  size={3}
+                >
+                  First
+                </h3>
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw fYwZsc"
+              data-year="2022"
+            >
+              <p
+                className="sc-jJoQJp"
+              >
+                
+              </p>
+              <div
+                className="sc-ikJyIC"
+              >
+                2022
+              </div>
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="First"
+                  src="https://picsum.photos/300/200"
+                />
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <h3
+                  className="sc-bdvvtL kfGFVo"
+                  color="#333"
+                  size={3}
+                >
+                  First
+                </h3>
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV bpJMTm fJbgTz"
+                    color="rgba(255,255,255,0.7)"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-iUKqMP"
+  >
+    <h2
+      className="sc-bdvvtL dvvVDW"
+      color="#333"
+      size={2}
+    >
+      More Projects
+    </h2>
+    <div
+      className="splide"
+    >
+      <div
+        className="splide__track"
+      >
+        <ul
+          className="splide__list"
+        >
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw dHIPnu"
+              data-year="2032"
+            >
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="Third"
+                  src="https://picsum.photos/300/200"
+                />
+                <div
+                  className="sc-ikJyIC"
+                >
+                  2032
+                </div>
+                <div
+                  className="sc-llYSUQ bXsmMC"
+                >
+                  <h3
+                    className="sc-bdvvtL iNJcuC"
+                    color="#333"
+                    size={5}
+                  >
+                    Third
+                  </h3>
+                  
+                </div>
+                <div
+                  className="sc-iJKOTD cZpNzu"
+                  onClick={[Function]}
+                >
+                  View More
+                </div>
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw dHIPnu"
+              data-year="2022"
+            >
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="First"
+                  src="https://picsum.photos/300/200"
+                />
+                <div
+                  className="sc-ikJyIC"
+                >
+                  2022
+                </div>
+                <div
+                  className="sc-llYSUQ bXsmMC"
+                >
+                  <h3
+                    className="sc-bdvvtL iNJcuC"
+                    color="#333"
+                    size={5}
+                  >
+                    First
+                  </h3>
+                  
+                </div>
+                <div
+                  className="sc-iJKOTD cZpNzu"
+                  onClick={[Function]}
+                >
+                  View More
+                </div>
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw dHIPnu"
+              data-year="2022"
+            >
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="Sixth"
+                  src="https://picsum.photos/300/200"
+                />
+                <div
+                  className="sc-ikJyIC"
+                >
+                  2022
+                </div>
+                <div
+                  className="sc-llYSUQ bXsmMC"
+                >
+                  <h3
+                    className="sc-bdvvtL iNJcuC"
+                    color="#333"
+                    size={5}
+                  >
+                    Sixth
+                  </h3>
+                  
+                </div>
+                <div
+                  className="sc-iJKOTD cZpNzu"
+                  onClick={[Function]}
+                >
+                  View More
+                </div>
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw dHIPnu"
+              data-year="2020"
+            >
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="Fourth"
+                  src="https://picsum.photos/300/200"
+                />
+                <div
+                  className="sc-ikJyIC"
+                >
+                  2020
+                </div>
+                <div
+                  className="sc-llYSUQ bXsmMC"
+                >
+                  <h3
+                    className="sc-bdvvtL iNJcuC"
+                    color="#333"
+                    size={5}
+                  >
+                    Fourth
+                  </h3>
+                  
+                </div>
+                <div
+                  className="sc-iJKOTD cZpNzu"
+                  onClick={[Function]}
+                >
+                  View More
+                </div>
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw dHIPnu"
+              data-year="2019"
+            >
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="Fifth"
+                  src="https://picsum.photos/300/200"
+                />
+                <div
+                  className="sc-ikJyIC"
+                >
+                  2019
+                </div>
+                <div
+                  className="sc-llYSUQ bXsmMC"
+                >
+                  <h3
+                    className="sc-bdvvtL iNJcuC"
+                    color="#333"
+                    size={5}
+                  >
+                    Fifth
+                  </h3>
+                  
+                </div>
+                <div
+                  className="sc-iJKOTD cZpNzu"
+                  onClick={[Function]}
+                >
+                  View More
+                </div>
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="splide__slide"
+          >
+            <div
+              className="sc-hiCibw dHIPnu"
+              data-year="2012"
+            >
+              <div
+                className="sc-giYglK kNYhGd"
+              >
+                <img
+                  alt="Second"
+                  src="https://picsum.photos/300/200"
+                />
+                <div
+                  className="sc-ikJyIC"
+                >
+                  2012
+                </div>
+                <div
+                  className="sc-llYSUQ bXsmMC"
+                >
+                  <h3
+                    className="sc-bdvvtL iNJcuC"
+                    color="#333"
+                    size={5}
+                  >
+                    Second
+                  </h3>
+                  
+                </div>
+                <div
+                  className="sc-iJKOTD cZpNzu"
+                  onClick={[Function]}
+                >
+                  View More
+                </div>
+              </div>
+              <div
+                className="sc-ezbkAF dtTAfI"
+              >
+                <div
+                  className="sc-cxpSdN inFNGt"
+                />
+                <div>
+                  <p
+                    className="sc-bYoBSM bZWFwp"
+                  >
+                    美國前國務卿蓬佩奧今天上午在臉書發文指出，他認為美國應該立刻在外交上承認中華民國（台灣）是一個主權獨立且享有自由的國家。蓬佩奧今天在台北發表專題演說時則表示，美國應外交承認中華民國台灣是自由主權國家，這無涉台灣未來的獨立，而是承認明確且早已存在的事實。
+                  </p>
+                </div>
+                <div
+                  className="sc-kLwhqv hotUsH"
+                >
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    CSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    SCSS
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    Node.js
+                  </div>
+                  <div
+                    className="sc-bBHxTw sc-iwjdpV hlkJaM fJbgTz"
+                    color="#eee"
+                  >
+                    # 
+                    JavaScript
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="my-slider-progress-box"
+    >
+      <div
+        className="my-slider-progress"
+      >
+        <div
+          className="my-slider-progress-bar"
+        />
+      </div>
+      <div
+        className="my-slider-progress-years"
+      >
+        <span>
+          2032
+        </span>
+        <span>
+          2012
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Skill Default 1`] = `
+<div
+  className="sc-bBHxTw sc-iwjdpV ekJeJ fJbgTz"
+  color="transparent"
+>
+  # 
+  HTML
+</div>
+`;
+
+exports[`Storyshots Slider Default 1`] = `
+<div
+  className="splide"
+>
+  <div
+    className="splide__track"
+  >
+    <ul
+      className="splide__list"
+    >
+      <li
+        className="splide__slide"
+      >
+        <img
+          alt=""
+          src="https://www.collinsdictionary.com/images/full/kitten_101801980.jpg"
+        />
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <img
+          alt=""
+          src="https://www.comfortzone.com/-/media/Images/ComfortZone-NA/US/Blog/bringing-new-kitten-home.jpg"
+        />
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <img
+          alt=""
+          src="https://icatcare.org/app/uploads/2018/07/Helping-your-new-cat-or-kitten-settle-in-1.png"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ThumbnailSlider Default 1`] = `
+<div>
+  <div
+    className="splide"
+  >
+    <div
+      className="splide__track"
+    >
+      <ul
+        className="splide__list"
+      >
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-caiLqq fmDXQf"
+          >
+            <video
+              autoPlay={true}
+              controls={true}
+              data-id="547f0d0f-8cce-400f-8ea0-e15a1162ef05"
+              playsInline={true}
+              poster="https://source.unsplash.com/collection/190727/1600x900"
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+            />
+          </div>
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-caiLqq fmDXQf"
+          >
+            <video
+              autoPlay={true}
+              controls={true}
+              data-id="1f587bd2-46f3-46a4-b936-83fe76e9fc02"
+              playsInline={true}
+              poster="https://source.unsplash.com/collection/190726/1600x900"
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+            />
+          </div>
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-caiLqq fmDXQf"
+          >
+            <video
+              autoPlay={true}
+              controls={true}
+              data-id="6413ac1d-ff86-4236-a4f8-b10738dd6522"
+              playsInline={true}
+              poster="https://source.unsplash.com/collection/190726/1600x900"
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+            />
+          </div>
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-caiLqq a-DJQt"
+          >
+            <img
+              alt=""
+              src="https://source.unsplash.com/collection/190727/1600x900"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="splide"
+  >
+    <div
+      className="splide__track"
+    >
+      <ul
+        className="splide__list"
+      >
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-bBHxTw eurlfr"
+            color="#00A4B4"
+          >
+            video
+          </div>
+          <img
+            alt=""
+            src="https://source.unsplash.com/collection/190727/1600x900"
+          />
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-bBHxTw eurlfr"
+            color="#00A4B4"
+          >
+            video
+          </div>
+          <img
+            alt=""
+            src="https://source.unsplash.com/collection/190726/1600x900"
+          />
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <div
+            className="sc-bBHxTw eurlfr"
+            color="#00A4B4"
+          >
+            video
+          </div>
+          <img
+            alt=""
+            src="https://source.unsplash.com/collection/190726/1600x900"
+          />
+        </li>
+        <li
+          className="splide__slide"
+        >
+          <img
+            alt=""
+            src="https://source.unsplash.com/collection/190727/1600x900"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Timeline Default 1`] = `
+<ul
+  className="sc-hBUSln hxAiof"
+>
+  <li
+    className="sc-ksdxgE kXeqJv"
+  >
+    <div
+      className="sc-iqseJM sc-crHmcD xRBbp ipTpLJ"
+    >
+      2018
+    </div>
+    <div
+      className="sc-kDTinF eepVUi"
+    />
+    <div
+      className="sc-iqseJM sc-egiyK xRBbp fzoJMV"
+    >
+      <h6
+        className="sc-bdvvtL ccMpqA"
+        color="#333"
+        size={4}
+      >
+        First
+      </h6>
+      <ul
+        className="sc-bqiRlB gewUTR"
+      >
+        <li>
+          撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal
+        </li>
+        <li>
+          渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li
+    className="sc-ksdxgE kXeqJv"
+  >
+    <div
+      className="sc-iqseJM sc-crHmcD xRBbp ipTpLJ"
+    >
+      2015
+    </div>
+    <div
+      className="sc-kDTinF eepVUi"
+    />
+    <div
+      className="sc-iqseJM sc-egiyK xRBbp fzoJMV"
+    >
+      <h6
+        className="sc-bdvvtL ccMpqA"
+        color="#333"
+        size={4}
+      >
+        Second
+      </h6>
+      <ul
+        className="sc-bqiRlB gewUTR"
+      >
+        <li>
+          撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal
+        </li>
+        <li>
+          渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li
+    className="sc-ksdxgE kXeqJv"
+  >
+    <div
+      className="sc-iqseJM sc-crHmcD xRBbp ipTpLJ"
+    >
+      2020
+    </div>
+    <div
+      className="sc-kDTinF eepVUi"
+    />
+    <div
+      className="sc-iqseJM sc-egiyK xRBbp fzoJMV"
+    >
+      <h6
+        className="sc-bdvvtL ccMpqA"
+        color="#333"
+        size={4}
+      >
+        Third
+      </h6>
+      <ul
+        className="sc-bqiRlB gewUTR"
+      >
+        <li>
+          撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal
+        </li>
+        <li>
+          渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots TimelineItem Default 1`] = `
+<li
+  className="sc-ksdxgE kXeqJv"
+>
+  <div
+    className="sc-iqseJM sc-crHmcD xRBbp ipTpLJ"
+  >
+    2019-2020
+  </div>
+  <div
+    className="sc-kDTinF eepVUi"
+  />
+  <div
+    className="sc-iqseJM sc-egiyK xRBbp fzoJMV"
+  >
+    <h6
+      className="sc-bdvvtL ccMpqA"
+      color="#333"
+      size={4}
+    >
+      NTUA University
+    </h6>
+    <ul
+      className="sc-bqiRlB gewUTR"
+    >
+      <li>
+        撰寫邏輯做表單驗證，包含信用卡資料、email 等，並以 React Portal
+      </li>
+      <li>
+        渲染錯誤提示訊息。輸入卡號時每滿四碼自動跳轉到下一欄位，並判斷所輸入卡號的信用卡品牌。
+      </li>
+    </ul>
+  </div>
+</li>
+`;
+
+exports[`Storyshots Title Default 1`] = `
+<h2
+  className="sc-bdvvtL dvvVDW"
+  color="#333"
+  size={2}
+>
+  Title
+</h2>
+`;
+
+exports[`Storyshots VideoSlideItem Default 1`] = `
+<li
+  className="splide__slide"
+>
+  <div
+    className="sc-caiLqq fmDXQf"
+  >
+    <video
+      autoPlay={true}
+      controls={true}
+      data-id="21b668a7-02d6-40ab-8626-e738e3e1f224"
+      playsInline={true}
+      poster="https://picsum.photos/200/300"
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    />
+  </div>
+</li>
+`;
+
+exports[`Storyshots VideoSlideItem Image 1`] = `
+<li
+  className="splide__slide"
+>
+  <div
+    className="sc-caiLqq a-DJQt"
+  >
+    <img
+      alt=""
+      src="https://picsum.photos/200/300"
+    />
+  </div>
+</li>
+`;
+
+exports[`Storyshots VideoSlider Default 1`] = `
+<div
+  className="splide"
+>
+  <div
+    className="splide__track"
+  >
+    <ul
+      className="splide__list"
+    >
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-caiLqq fmDXQf"
+        >
+          <video
+            autoPlay={true}
+            controls={true}
+            data-id="0a416cf6-0072-436a-8129-36817fe63230"
+            playsInline={true}
+            poster="https://source.unsplash.com/collection/190727/1600x900"
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          />
+        </div>
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-caiLqq a-DJQt"
+        >
+          <img
+            alt=""
+            src="https://source.unsplash.com/collection/190727/1600x900"
+          />
+        </div>
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-caiLqq fmDXQf"
+        >
+          <video
+            autoPlay={true}
+            controls={true}
+            data-id="a7640b2f-0889-4131-9b3c-4fb039832061"
+            playsInline={true}
+            poster="https://source.unsplash.com/collection/190727/1600x900"
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          />
+        </div>
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-caiLqq fmDXQf"
+        >
+          <video
+            autoPlay={true}
+            controls={true}
+            data-id="609a68eb-79eb-447e-be73-600138eae87c"
+            playsInline={true}
+            poster="https://source.unsplash.com/collection/190727/1600x900"
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          />
+        </div>
+      </li>
+      <li
+        className="splide__slide"
+      >
+        <div
+          className="sc-caiLqq a-DJQt"
+        >
+          <img
+            alt=""
+            src="https://source.unsplash.com/collection/190727/1600x900"
+          />
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

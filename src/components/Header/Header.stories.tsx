@@ -25,3 +25,10 @@ const Template: Story<HeaderProps> = (args) => {
 };
 
 export const Default = Template.bind({});
+Default.args = {
+  menu: [
+    { title: "First", onClick() {} },
+    { title: "Second", onClick() {} },
+    { title: "Third", onClick() {} },
+  ],
+};
