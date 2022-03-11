@@ -1,13 +1,11 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.268d51f0.css",
-    "main.js": "/personal-website/static/js/main.1000f3ef.js",
+    "main.js": "/personal-website/static/js/main.07b1f5ec.js",
     "static/media/theses_2022-video-01.mp4": "/personal-website/static/media/theses_2022-video-01.d22953239dd3568cd4cd.mp4",
     "static/media/mask-map_2022-video-01.mov": "/personal-website/static/media/mask-map_2022-video-01.8d131a7c3a653b9750e4.mov",
     "static/media/ilisten_2022-video-01.mov": "/personal-website/static/media/ilisten_2022-video-01.ec5b40ce8adf490b2f97.mov",
     "static/media/ntso_2022-video-01.mp4": "/personal-website/static/media/ntso_2022-video-01.1f0b5ec4ece9b2c39dd2.mp4",
-    "static/media/tax_2022-video-02.mov": "/personal-website/static/media/tax_2022-video-02.c9bb5f93d3f6356dbdcd.mov",
-    "static/media/tax_2022-video-01.mov": "/personal-website/static/media/tax_2022-video-01.e4c3928d5941cf423728.mov",
     "static/media/idcard_2022-video-02.mov": "/personal-website/static/media/idcard_2022-video-02.5ec83318534e3a232832.mov",
     "static/media/ilisten_2022-video-02.mov": "/personal-website/static/media/ilisten_2022-video-02.564d389511f33b26e2dd.mov",
     "static/media/theses_2022-video-02.mp4": "/personal-website/static/media/theses_2022-video-02.9b73f53c1be6ac9310cd.mp4",
@@ -36,7 +34,6 @@
     "static/media/audio-player_2022.png": "/personal-website/static/media/audio-player_2022.f33da8875129367941e6.png",
     "static/media/react-pomodoro_2022.png": "/personal-website/static/media/react-pomodoro_2022.7b67ae5ce87f27c90ffb.png",
     "static/media/mask-map_2022-image-03.jpg": "/personal-website/static/media/mask-map_2022-image-03.4682e96e1dc11905159a.jpg",
-    "static/media/tax_2022-image-01.png": "/personal-website/static/media/tax_2022-image-01.666fa2835ea7c80c7635.png",
     "static/media/mask-map_2022-image-01.jpg": "/personal-website/static/media/mask-map_2022-image-01.17e69cd51bd59827e7b8.jpg",
     "static/media/mask-map_2022-image-05.jpg": "/personal-website/static/media/mask-map_2022-image-05.6d3333220fb224800810.jpg",
     "static/media/mask-map_2022-image-04.jpg": "/personal-website/static/media/mask-map_2022-image-04.2968b4d70f4b82b23a82.jpg",
@@ -60,10 +57,10 @@
     "static/media/payment_2022-image-05.jpg": "/personal-website/static/media/payment_2022-image-05.d55bed18e3544626ae9c.jpg",
     "index.html": "/personal-website/index.html",
     "main.268d51f0.css.map": "/personal-website/static/css/main.268d51f0.css.map",
-    "main.1000f3ef.js.map": "/personal-website/static/js/main.1000f3ef.js.map"
+    "main.07b1f5ec.js.map": "/personal-website/static/js/main.07b1f5ec.js.map"
   },
   "entrypoints": [
     "static/css/main.268d51f0.css",
-    "static/js/main.1000f3ef.js"
+    "static/js/main.07b1f5ec.js"
   ]
 }
