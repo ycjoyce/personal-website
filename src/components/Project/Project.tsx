@@ -16,6 +16,7 @@ import StyledProject, {
   StyledSubtitle,
 } from "./Project.style";
 import theme from "../../styles/abstracts/theme";
+import { motion } from "framer-motion";
 
 export interface ProjectProps {
   id: string;
@@ -45,11 +46,28 @@ const Project: FC<ProjectProps> = ({
   onClick = () => {},
 }) => {
   const renderSkills = (skills: SkillProps["title"][]) => {
-    return skills.map((skill) => (
+    return skills.map((skill, i) => (
       <Skill
         title={skill}
         color={primary ? "rgba(255,255,255,0.7)" : "#eee"}
         key={skill}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: "all" }}
+        variants={{
+          offscreen: {
+            opacity: 0,
+            y: 10,
+          },
+          onscreen: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 0.5,
+              delay: i * 0.3,
+            },
+          },
+        }}
       />
     ));
   };
@@ -70,7 +88,27 @@ const Project: FC<ProjectProps> = ({
 
   return (
     <StyledProject data-year={year} more={more.length > 0} primary={primary}>
-      {primary && <StyledSubtitle>{subtitle}</StyledSubtitle>}
+      {primary && (
+        <StyledSubtitle
+          as={motion.p}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: "all" }}
+          variants={{
+            offscreen: {
+              scale: 0,
+            },
+            onscreen: {
+              scale: 1,
+              transition: {
+                duration: 0.5,
+              },
+            },
+          }}
+        >
+          {subtitle}
+        </StyledSubtitle>
+      )}
 
       {primary && <StyledYear>{year}</StyledYear>}
 
@@ -97,11 +135,9 @@ const Project: FC<ProjectProps> = ({
 
       <StyledIntroBox>
         {primary && (
-          <>
-            <Title level={3} size={3}>
-              {title}
-            </Title>
-          </>
+          <Title level={3} size={3}>
+            {title}
+          </Title>
         )}
 
         <StyledLinksBox>

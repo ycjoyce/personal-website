@@ -17,20 +17,12 @@ const Menu: FC<MenuProps> = ({ opened = false, items }) => {
     return items.map(({ title, onClick }, i) => (
       <StyledMenuItem
         key={title}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true }}
-        variants={{
-          offscreen: {
-            y: -10,
-          },
-          onscreen: {
-            y: 0,
-            transition: {
-              duration: 0.3,
-              delay: i * 0.2,
-            },
-          },
+        animate={{
+          y: [-10, 0],
+        }}
+        transition={{
+          deration: 0.3,
+          delay: i * 0.2,
         }}
         onClick={() => onClick(title)}
       >

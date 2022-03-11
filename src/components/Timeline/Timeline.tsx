@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { Variants } from "framer-motion";
 import TimelineItem, { TimelineItemProps } from "../TimelineItem/TimelineItem";
 import StyledTimeline from "./Timeline.style";
 

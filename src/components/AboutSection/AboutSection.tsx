@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import Title from "../Title/Title";
+import { motion } from "framer-motion";
+import SectionTitle from "../SectionTitle/SectionTitle";
 import Parallax from "../Parallax/Parallax";
 import StyledAboutSection, {
   StyledImagesBox,
@@ -45,12 +46,29 @@ const AboutSection: FC<AboutSectionProps> = ({
       </StyledImagesBox>
 
       <StyledArticle>
-        <Title level={2} primary>
-          About
-        </Title>
+        <SectionTitle>About</SectionTitle>
 
         {content.split("\n").map((e, i) => (
-          <p key={`${e}${i}`}>{e}</p>
+          <motion.p
+            key={`${e}${i}`}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: "all" }}
+            variants={{
+              offscreen: {
+                opacity: 0,
+              },
+              onscreen: {
+                opacity: 1,
+                transition: {
+                  duration: 0.3,
+                  delay: i * 0.2,
+                },
+              },
+            }}
+          >
+            {e}
+          </motion.p>
         ))}
       </StyledArticle>
     </StyledAboutSection>

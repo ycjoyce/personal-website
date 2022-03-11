@@ -1,7 +1,8 @@
 import React, { FC } from "react";
+import { motion, MotionProps } from "framer-motion";
 import StyledLink from "./Link.style";
 
-export interface LinkProps {
+export interface LinkProps extends MotionProps {
   icon?: "github" | "link";
   url: string;
   label: string;
@@ -15,6 +16,7 @@ const Link: FC<LinkProps> = ({
   label,
   color = "#fff",
   target = "_blank",
+  ...props
 }) => {
   const icons = {
     link: "fa fa-link",
@@ -22,7 +24,14 @@ const Link: FC<LinkProps> = ({
   };
 
   return (
-    <StyledLink href={url} target={target} color={color} icon={icon}>
+    <StyledLink
+      as={motion.a}
+      href={url}
+      target={target}
+      color={color}
+      icon={icon}
+      {...props}
+    >
       <i className={icons[icon]}></i>
       {label}
     </StyledLink>

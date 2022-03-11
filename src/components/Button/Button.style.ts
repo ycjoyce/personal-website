@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { colord } from "colord";
 import { ButtonProps } from "./Button";
 
-const StyledButton = styled.button<ButtonProps>`
+const StyledButton = styled(motion.button)<ButtonProps>`
   letter-spacing: 0.1rem;
   border: 2px solid ${({ color }) => color};
   background-color: ${({ outline, color }) =>

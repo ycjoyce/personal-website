@@ -1,9 +1,10 @@
 import React, { FC, ReactNode } from "react";
+import { MotionProps } from "framer-motion";
 import StyledButton from "./Button.style";
 
 export type ButtonSize = "sm" | "md" | "lg";
 
-export interface ButtonProps {
+export interface ButtonProps extends MotionProps {
   color?: string;
   outline?: boolean;
   size?: ButtonSize;
@@ -17,8 +18,17 @@ const Button: FC<ButtonProps> = ({
   size = "md",
   children,
   onClick = () => {},
+  ...props
 }) => (
-  <StyledButton color={color} outline={outline} size={size} onClick={onClick}>
+  <StyledButton
+    color={color}
+    outline={outline}
+    size={size}
+    onClick={onClick}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.8 }}
+    {...props}
+  >
     {children}
   </StyledButton>
 );

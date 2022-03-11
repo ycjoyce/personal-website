@@ -7,6 +7,7 @@ import { StyledBlotterBox } from "./CoverSection.style";
 import StyledBlotter from "../Blotter/Blotter.style";
 import theme from "../../styles/abstracts/theme";
 import AnimatedBackground from "../AnimatedBackground/AnimatedBackground";
+import { motion } from "framer-motion";
 
 export interface CoverSectionProps {
   strings: string[];
@@ -91,6 +92,21 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
     };
   }, [strings]);
 
+  const getAnimate = (
+    delayCount: number,
+    style: { [key: string]: [string, string] }
+  ) => {
+    return {
+      animate: {
+        opacity: [0, 1],
+        ...style,
+      },
+      transition: {
+        delay: 0.8 + delayCount * 0.3,
+      },
+    };
+  };
+
   return (
     <StyledCoverSection onMouseMove={handleMouseMove}>
       <AnimatedBackground />
@@ -100,12 +116,12 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           id="j-box"
           ref={elJ}
           style={{ top: "-50px", left: "0px" }}
+          {...getAnimate(0, { left: ["-50px", "0px"] })}
         />
         <Blotter
           text="J"
           appendTo="j-box"
           fontSize={400}
-          // rotation={rotate["J"]}
           rotation={45}
         ></Blotter>
 
@@ -113,6 +129,7 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           id="o-box"
           ref={elO}
           style={{ top: "250px", left: "100px" }}
+          {...getAnimate(1, { top: ["350px", "250px"] })}
         />
         <Blotter
           text="o"
@@ -125,13 +142,13 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           id="y-box"
           ref={elY}
           style={{ top: "80px", left: "300px" }}
+          {...getAnimate(3, { left: ["400px", "300px"] })}
         />
         <Blotter
           text="y"
           appendTo="y-box"
           fontSize={90}
           rgbOffset={0.15}
-          // rotation={rotate["y"]}
           rotation={10}
         ></Blotter>
 
@@ -139,12 +156,15 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           id="c-box"
           ref={elC}
           style={{ top: "-200px", left: "200px" }}
+          {...getAnimate(2, {
+            top: ["-300px", "-200px"],
+            left: ["300px", "200px"],
+          })}
         />
         <Blotter
           text="c"
           appendTo="c-box"
           fontSize={400}
-          // rotation={rotate["c"]}
           rotation={120}
         ></Blotter>
 
@@ -152,17 +172,24 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           id="e-box"
           ref={elE}
           style={{ top: "350px", left: "400px" }}
+          {...getAnimate(4, {
+            top: ["450px", "350px"],
+            left: ["500px", "400px"],
+          })}
         />
         <Blotter
           text="e"
           appendTo="e-box"
           fontSize={100}
-          // rotation={rotate["e"]}
           rotation={45}
           rgbOffset={0.2}
         ></Blotter>
 
-        <p data-subtitle ref={typedEl}></p>
+        <motion.p
+          data-subtitle
+          ref={typedEl}
+          {...getAnimate(5, { x: ["100px", "0px"] })}
+        ></motion.p>
       </StyledBlotterBox>
 
       <StyledArrowBox>

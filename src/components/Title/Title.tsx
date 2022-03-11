@@ -1,10 +1,11 @@
+import { motion, MotionProps } from "framer-motion";
 import React, { FC } from "react";
 import theme from "../../styles/abstracts/theme";
 import StyledTitle from "./Title.style";
 
 export type FontSize = 1 | 2 | 3 | 4 | 5 | 6;
 
-export interface TitleProps {
+export interface TitleProps extends MotionProps {
   level?: FontSize;
   size?: FontSize;
   color?: string;
@@ -18,9 +19,16 @@ const Title: FC<TitleProps> = ({
   color = theme.color.black,
   children,
   primary = false,
+  ...props
 }) => {
   return (
-    <StyledTitle as={`h${level}`} primary={primary} size={size} color={color}>
+    <StyledTitle
+      as={motion[`h${level}`]}
+      primary={primary}
+      size={size}
+      color={color}
+      {...props}
+    >
       {children}
     </StyledTitle>
   );

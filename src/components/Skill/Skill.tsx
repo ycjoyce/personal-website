@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { motion, MotionProps } from "framer-motion";
 import StyledSkill from "./Skill.style";
 
 export const SkillItem = {
@@ -22,13 +23,15 @@ export const SkillItem = {
   php: "PHP",
 };
 
-export interface SkillProps {
+export interface SkillProps extends MotionProps {
   title: keyof typeof SkillItem;
   color?: string;
 }
 
-const Skill: FC<SkillProps> = ({ title, color = "transparent" }) => (
-  <StyledSkill color={color}># {SkillItem[title]}</StyledSkill>
+const Skill: FC<SkillProps> = ({ title, color = "transparent", ...props }) => (
+  <StyledSkill as={motion.div} color={color} {...props}>
+    # {SkillItem[title]}
+  </StyledSkill>
 );
 
 export default Skill;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-const StyledBlotter = styled.div`
+const StyledBlotter = styled(motion.div)`
   display: inline-block;
 `;
 
