@@ -302,27 +302,6 @@ export const projects: ProjectSectionProps = {
     {
       id: uuidv4(),
       year: "2021",
-      title: "文化部文化藝術事業分離課稅網站",
-      subtitle: "Work Project",
-      intro: "前後台網站之網頁切版，內容以表單及資料表格呈現為主。",
-      cover: require("./images/tax_2022-image-01.png"),
-      skills: ["html", "javascript", "scss", "rwd"],
-      more: [
-        {
-          id: uuidv4(),
-          video: require("./images/tax_2022-video-01.mov"),
-          preview: require("./images/tax_2022-image-01.png"),
-        },
-        {
-          id: uuidv4(),
-          video: require("./images/tax_2022-video-02.mov"),
-          preview: require("./images/tax_2022-image-01.png"),
-        },
-      ],
-    },
-    {
-      id: uuidv4(),
-      year: "2021",
       title: "FunPark 圖書館電子書借閱網站",
       subtitle: "Work Project",
       intro:
