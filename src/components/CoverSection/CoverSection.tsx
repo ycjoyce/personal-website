@@ -116,7 +116,7 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           id="j-box"
           ref={elJ}
           style={{ top: "-50px", left: "0px" }}
-          {...getAnimate(0, { left: ["-50px", "0px"] })}
+          {...getAnimate(0, { x: ["-50px", "0px"] })}
         />
         <Blotter
           text="J"
@@ -129,7 +129,7 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           id="o-box"
           ref={elO}
           style={{ top: "250px", left: "100px" }}
-          {...getAnimate(1, { top: ["350px", "250px"] })}
+          {...getAnimate(1, { y: ["100px", "0px"] })}
         />
         <Blotter
           text="o"
@@ -142,7 +142,7 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           id="y-box"
           ref={elY}
           style={{ top: "80px", left: "300px" }}
-          {...getAnimate(3, { left: ["400px", "300px"] })}
+          {...getAnimate(3, { x: ["100px", "0px"] })}
         />
         <Blotter
           text="y"
@@ -157,8 +157,8 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           ref={elC}
           style={{ top: "-200px", left: "200px" }}
           {...getAnimate(2, {
-            top: ["-300px", "-200px"],
-            left: ["300px", "200px"],
+            y: ["-100px", "0px"],
+            x: ["100px", "0px"],
           })}
         />
         <Blotter
@@ -173,8 +173,8 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           ref={elE}
           style={{ top: "350px", left: "400px" }}
           {...getAnimate(4, {
-            top: ["450px", "350px"],
-            left: ["500px", "400px"],
+            y: ["10px", "0px"],
+            x: ["100px", "0px"],
           })}
         />
         <Blotter

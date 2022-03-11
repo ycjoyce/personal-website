@@ -79,6 +79,7 @@ const StyledMenu = styled.div<{ opened: boolean }>`
   width: 60vw;
   min-width: 300px;
   height: 100vh;
+  height: calc(var(--vh) * 100);
   display: flex;
   flex-direction: column;
   justify-content: center;

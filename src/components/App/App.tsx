@@ -1,4 +1,4 @@
-import React, { FC, useState, useRef } from "react";
+import React, { FC, useState, useRef, useEffect } from "react";
 import useScrollDirection from "../../hooks/useScrollDirection";
 import AboutSection from "../AboutSection/AboutSection";
 import CoverSection from "../CoverSection/CoverSection";
@@ -12,6 +12,11 @@ const App: FC = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerEl = useRef<HTMLElement>(null);
   const { direction } = useScrollDirection();
+
+  useEffect(() => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }, []);
 
   const handleHamburgerClick = () => {
     setMenuOpened((o) => !o);
