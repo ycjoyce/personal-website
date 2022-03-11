@@ -26,6 +26,19 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
       window.location.href = `mailto:${recipient}`;
     };
 
+    const getAnimate = (delay: number) => {
+      return {
+        animate: {
+          opacity: [0, 1],
+          y: [-10, 0],
+        },
+        transition: {
+          duration: 0.3,
+          delay,
+        },
+      };
+    };
+
     return (
       <StyledHeaderBox hide={hide} opened={menuOpened}>
         <StyledHeader ref={ref}>
@@ -37,12 +50,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
               size="sm"
               color={theme.color.primary}
               onClick={handleContact}
-              animate={{
-                y: [-10, 0],
-              }}
-              transition={{
-                delay: 0.8,
-              }}
+              {...getAnimate(0.8)}
             >
               Contact Me
             </Button>
@@ -53,12 +61,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
           opened={menuOpened}
           color={menuOpened ? "#fff" : theme.color.emphasize}
           onClick={onHamburgerClick}
-          animate={{
-            y: [-10, 0],
-          }}
-          transition={{
-            delay: 1,
-          }}
+          {...getAnimate(1)}
         />
 
         <Menu items={menu} opened={menuOpened} />

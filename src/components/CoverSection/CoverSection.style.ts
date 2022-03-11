@@ -34,6 +34,7 @@ const StyledCoverSection = styled.div`
     position: absolute;
     bottom: 20px;
     left: 50%;
+    transform: translateX(-50%);
   }
 
   & ${StyledBackground} {

@@ -14,7 +14,7 @@ const Timeline: FC<TimelineProps> = ({ items }) => {
         key={item.title}
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: "some" }}
         variants={{
           offscreen: {
             opacity: 0,
@@ -22,7 +22,7 @@ const Timeline: FC<TimelineProps> = ({ items }) => {
           onscreen: {
             opacity: 1,
             transition: {
-              duration: 1,
+              duration: 0.5,
               delay: i * 0.3,
             },
           },

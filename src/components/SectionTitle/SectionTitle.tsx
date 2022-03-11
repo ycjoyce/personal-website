@@ -17,7 +17,8 @@ const SectionTitle: FC<SectionTitleProps> = ({ children }) => (
       onscreen: {
         x: "0px",
         transition: {
-          duration: 0.8,
+          duration: 0.5,
+          ease: "easeOut",
         },
       },
     }}

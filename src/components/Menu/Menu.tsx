@@ -18,10 +18,11 @@ const Menu: FC<MenuProps> = ({ opened = false, items }) => {
       <StyledMenuItem
         key={title}
         animate={{
+          opacity: [0, 1],
           y: [-10, 0],
         }}
         transition={{
-          deration: 0.3,
+          duration: 0.3,
           delay: i * 0.2,
         }}
         onClick={() => onClick(title)}
