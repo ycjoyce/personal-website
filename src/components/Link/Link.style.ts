@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { breakpointUp } from "../../styles/abstracts/mixins";
 import { LinkProps } from "./Link";
 
 const StyledLink = styled.a<{ color: string; icon: LinkProps["icon"] }>`
@@ -25,11 +26,17 @@ const StyledLink = styled.a<{ color: string; icon: LinkProps["icon"] }>`
     transition: width 0.3s;
   }
 
-  &:hover {
-    &::after {
-      width: 100%;
-    }
-  }
+  ${({ theme }) => {
+    return css`
+      ${breakpointUp(theme.breakpoints.sm)} {
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    `;
+  }}
 `;
 
 export default StyledLink;

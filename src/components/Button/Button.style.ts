@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 import { colord } from "colord";
 import { ButtonProps } from "./Button";
+import { breakpointUp } from "../../styles/abstracts/mixins";
 
 const StyledButton = styled(motion.button)<ButtonProps>`
   letter-spacing: 0.1rem;
@@ -33,14 +34,18 @@ const StyledButton = styled(motion.button)<ButtonProps>`
   }};
   transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 
-  &:hover {
-    background-color: ${({ color }) => color};
-    color: ${({ color = "#fff", theme }) =>
-      colord(color).isLight() ? theme.color.black : "#fff"};
-    box-shadow: inset 0 0 0
-        ${({ color }) => colord(color!).alpha(0.5).toRgbString()},
-      0 0 1.5em ${({ color }) => colord(color!).alpha(0.7).toRgbString()};
-  }
+  ${({ theme, color = "#fff" }) => {
+    return css`
+      ${breakpointUp(theme.breakpoints.sm)} {
+        &:hover {
+          background-color: ${color};
+          color: ${colord(color).isLight() ? theme.color.black : "#fff"};
+          box-shadow: inset 0 0 0 ${colord(color!).alpha(0.5).toRgbString()},
+            0 0 1.5em ${colord(color!).alpha(0.7).toRgbString()};
+        }
+      }
+    `;
+  }}
 `;
 
 export default StyledButton;

@@ -18,14 +18,14 @@ export const StyledMenuItem = styled(motion.li)`
     transition: opacity 0.1s, flex-grow 0.5s;
   }
 
-  &:hover {
+  /* &:hover {
     font-style: italic;
 
     & ${StyledArrow} {
       opacity: 1;
       flex-grow: 1;
     }
-  }
+  } */
 
   ${({ theme }) => {
     return css`

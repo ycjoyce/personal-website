@@ -87,7 +87,11 @@ const Project: FC<ProjectProps> = ({
   };
 
   return (
-    <StyledProject data-year={year} more={more.length > 0} primary={primary}>
+    <StyledProject
+      data-year={year}
+      data-more={more.length > 0}
+      data-primary={primary}
+    >
       {primary && (
         <StyledSubtitle
           as={motion.p}
