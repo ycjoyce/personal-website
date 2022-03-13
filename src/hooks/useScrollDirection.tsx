@@ -19,7 +19,7 @@ const useScrollDirection = () => {
 
   useEffect(() => {
     setY(window.scrollY);
-    window.addEventListener("scroll", handleNavigation);
+    window.addEventListener("scroll", handleNavigation, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", handleNavigation);
