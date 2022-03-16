@@ -37,9 +37,13 @@ export const StyledMarker = styled.div`
   }
 `;
 
+StyledMarker.displayName = "StyledTimelineItemMarker";
+
 export const StyledBox = styled.div`
   flex: 1;
 `;
+
+StyledBox.displayName = "StyledTimelineItemBox";
 
 export const StyledTime = styled(StyledBox)`
   text-align: right;
@@ -53,6 +57,8 @@ export const StyledTime = styled(StyledBox)`
     `;
   }}
 `;
+
+StyledTime.displayName = "StyledTimelineItemTime";
 
 export const StyledIntro = styled(StyledBox)`
   margin: 0 0 30px 0;
@@ -68,6 +74,8 @@ export const StyledIntro = styled(StyledBox)`
     padding: 5px; */
   }
 `;
+
+StyledIntro.displayName = "StyledTimelineItemIntro";
 
 export const StyledList = styled.ul`
   padding: 0;
@@ -93,6 +101,8 @@ export const StyledList = styled.ul`
     }
   }
 `;
+
+StyledList.displayName = "StyledTimelineItemList";
 
 const StyledTimelineItem = styled(motion.li)`
   display: flex;
@@ -133,5 +143,7 @@ const StyledTimelineItem = styled(motion.li)`
     }
   }
 `;
+
+StyledTimelineItem.displayName = "StyledTimelineItem";
 
 export default StyledTimelineItem;

@@ -10,6 +10,8 @@ export const StyledModalBackground = styled.div`
   top: 0;
 `;
 
+StyledModalBackground.displayName = "StyledModalBackground";
+
 export const StyledCloseButton = styled.button`
   background: ${({ theme }) => theme.color.primary};
   border: none;
@@ -23,6 +25,8 @@ export const StyledCloseButton = styled.button`
     filter: brightness(1.2);
   }
 `;
+
+StyledCloseButton.displayName = "StyledModalCloseButton";
 
 export const StyledModalContent = styled.div`
   position: absolute;
@@ -39,6 +43,8 @@ export const StyledModalContent = styled.div`
   }
 `;
 
+StyledModalContent.displayName = "StyledModalContent";
+
 const StyledModal = styled.div`
   position: fixed;
   width: 100vw;
@@ -47,5 +53,7 @@ const StyledModal = styled.div`
   top: 0;
   z-index: 100;
 `;
+
+StyledModal.displayName = "StyledModal";
 
 export default StyledModal;

@@ -14,6 +14,8 @@ const StyledAboutSection = styled.section`
   }}
 `;
 
+StyledAboutSection.displayName = "StyledAboutSection";
+
 export const StyledImagesBox = styled.div`
   flex: 1 1 auto;
   width: 0;
@@ -56,6 +58,8 @@ export const StyledImagesBox = styled.div`
   }}
 `;
 
+StyledImagesBox.displayName = "StyledAboutSectionImagesBox";
+
 export const StyledArticle = styled.article`
   flex: 0 0 400px;
   z-index: 2;
@@ -69,5 +73,7 @@ export const StyledArticle = styled.article`
     `;
   }}
 `;
+
+StyledArticle.displayName = "StyledAboutSectionArticle";
 
 export default StyledAboutSection;

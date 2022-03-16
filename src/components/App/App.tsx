@@ -1,4 +1,4 @@
-import React, { FC, useState, useRef } from "react";
+import React, { FC, useState, useRef, useMemo } from "react";
 import useScrollDirection from "../../hooks/useScrollDirection";
 import AboutSection from "../AboutSection/AboutSection";
 import CoverSection from "../CoverSection/CoverSection";
@@ -27,26 +27,34 @@ const App: FC = () => {
     setMenuOpened(false);
   };
 
-  const headerItems = [
-    {
-      title: "About",
-      onClick() {
-        handleMenuClick("about");
+  const headerItems = useMemo(
+    () => [
+      {
+        title: "About",
+        onClick() {
+          handleMenuClick("about");
+        },
       },
-    },
-    {
-      title: "Projects",
-      onClick() {
-        handleMenuClick("projects");
+      {
+        title: "Projects",
+        onClick() {
+          handleMenuClick("projects");
+        },
       },
-    },
-    {
-      title: "Experience",
-      onClick() {
-        handleMenuClick("experience");
+      {
+        title: "Experience",
+        onClick() {
+          handleMenuClick("experience");
+        },
       },
-    },
-  ];
+    ],
+    []
+  );
+
+  const ProjectsComponent = useMemo(
+    () => <ProjectsSection {...projects} />,
+    []
+  );
 
   return (
     <StyledApp>
@@ -62,7 +70,7 @@ const App: FC = () => {
 
       <StyledWrapper>
         <AboutSection {...about} />
-        <ProjectsSection {...projects} />
+        {ProjectsComponent}
         <ExperienceSection {...experience} />
       </StyledWrapper>
     </StyledApp>

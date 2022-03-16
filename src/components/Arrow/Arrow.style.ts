@@ -68,4 +68,6 @@ const StyledArrow = styled.div<StyledArrowProps>`
   }
 `;
 
+StyledArrow.displayName = "StyledArrow";
+
 export default StyledArrow;

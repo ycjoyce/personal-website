@@ -39,4 +39,6 @@ const StyledLink = styled.a<{ color: string; icon: LinkProps["icon"] }>`
   }}
 `;
 
+StyledLink.displayName = "StyledLink";
+
 export default StyledLink;

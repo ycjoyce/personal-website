@@ -48,4 +48,6 @@ const StyledButton = styled(motion.button)<ButtonProps>`
   }}
 `;
 
+StyledButton.displayName = "StyledButton";
+
 export default StyledButton;

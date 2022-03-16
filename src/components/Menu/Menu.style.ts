@@ -52,6 +52,8 @@ export const StyledMenuItem = styled(motion.li)`
   }}
 `;
 
+StyledMenuItem.displayName = "StyledMenuItem";
+
 export const StyledMenuList = styled.ul`
   list-style: none;
   color: #fff;
@@ -69,6 +71,8 @@ export const StyledMenuList = styled.ul`
     `;
   }}
 `;
+
+StyledMenuList.displayName = "StyledMenuList";
 
 const StyledMenu = styled.div<{ opened: boolean }>`
   background-color: ${({ theme }) => theme.color.emphasize};
@@ -98,5 +102,7 @@ const StyledMenu = styled.div<{ opened: boolean }>`
     `;
   }}
 `;
+
+StyledMenu.displayName = "StyledMenu";
 
 export default StyledMenu;

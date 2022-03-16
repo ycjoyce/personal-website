@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useCallback, useMemo, useState } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import ProjectList from "../ProjectList/ProjectList";
 import Project, { ProjectProps } from "../Project/Project";
@@ -17,28 +17,41 @@ export interface ProjectSectionProps {
 const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
   const [lightBoxItems, setLightBoxItems] = useState<VideoSlideItemProps[]>([]);
 
-  const handleMainClick = (id: string) => {
-    setLightBoxItems(main.find((item) => item.id === id)?.more || []);
-  };
+  const renderProjects = useCallback(
+    (isMain: boolean, items: ProjectProps[]) => {
+      const handleMainClick = (id: string) => {
+        setLightBoxItems(main.find((item) => item.id === id)?.more || []);
+      };
 
-  const handleSubClick = (id: string) => {
-    setLightBoxItems(sub.find((item) => item.id === id)?.more || []);
-  };
+      const handleSubClick = (id: string) => {
+        setLightBoxItems(sub.find((item) => item.id === id)?.more || []);
+      };
 
-  const renderProjects = (main: boolean, items: ProjectProps[]) => {
-    return items.map((item) => (
-      <Project
-        {...item}
-        key={item.id}
-        primary={main}
-        onClick={main ? handleMainClick : handleSubClick}
-      />
-    ));
-  };
+      return items.map((item) => (
+        <Project
+          {...item}
+          key={item.id}
+          primary={isMain}
+          onClick={isMain ? handleMainClick : handleSubClick}
+        />
+      ));
+    },
+    [main, sub]
+  );
 
   const handleCloseLightBox = () => {
     setLightBoxItems([]);
   };
+
+  const PrimaryProjects = useMemo(
+    () => renderProjects(true, main),
+    [main, renderProjects]
+  );
+
+  const SubProjects = useMemo(
+    () => renderProjects(false, sub),
+    [sub, renderProjects]
+  );
 
   return (
     <StyledProjectSection id="projects">
@@ -61,7 +74,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
             pagination: true,
           }}
         >
-          {renderProjects(true, main)}
+          {PrimaryProjects}
         </ProjectList>
       </StyledProjectsBox>
 
@@ -93,7 +106,7 @@ const ProjectSection: FC<ProjectSectionProps> = ({ main, sub }) => {
             },
           }}
         >
-          {renderProjects(false, sub)}
+          {SubProjects}
         </ProjectList>
       </StyledProjectsBox>
     </StyledProjectSection>

@@ -1,4 +1,4 @@
-import React, { FC, useState, useRef, useEffect } from "react";
+import React, { FC, useState, useRef, useEffect, useMemo } from "react";
 import Arrow from "../Arrow/Arrow";
 import Blotter from "../Blotter/Blotter";
 import Typed from "typed.js";
@@ -107,11 +107,9 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
     };
   };
 
-  return (
-    <StyledCoverSection onMouseMove={handleMouseMove}>
-      <AnimatedBackground />
-
-      <StyledBlotterBox>
+  const JIcon = useMemo(
+    () => (
+      <>
         <StyledBlotter
           id="j-box"
           ref={elJ}
@@ -124,7 +122,14 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           fontSize={400}
           rotation={45}
         ></Blotter>
+      </>
+    ),
+    []
+  );
 
+  const OIcon = useMemo(
+    () => (
+      <>
         <StyledBlotter
           id="o-box"
           ref={elO}
@@ -137,7 +142,14 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           fontSize={140}
           rotation={rotate["o"]}
         ></Blotter>
+      </>
+    ),
+    [rotate]
+  );
 
+  const YIcon = useMemo(
+    () => (
+      <>
         <StyledBlotter
           id="y-box"
           ref={elY}
@@ -151,7 +163,14 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           rgbOffset={0.15}
           rotation={10}
         ></Blotter>
+      </>
+    ),
+    []
+  );
 
+  const CIcon = useMemo(
+    () => (
+      <>
         <StyledBlotter
           id="c-box"
           ref={elC}
@@ -167,7 +186,14 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           fontSize={400}
           rotation={120}
         ></Blotter>
+      </>
+    ),
+    []
+  );
 
+  const EIcon = useMemo(
+    () => (
+      <>
         <StyledBlotter
           id="e-box"
           ref={elE}
@@ -184,12 +210,34 @@ const CoverSection: FC<CoverSectionProps> = ({ strings }) => {
           rotation={45}
           rgbOffset={0.2}
         ></Blotter>
+      </>
+    ),
+    []
+  );
 
-        <motion.p
-          data-subtitle
-          ref={typedEl}
-          {...getAnimate(5, { x: ["100px", "0px"] })}
-        ></motion.p>
+  const TypingText = useMemo(
+    () => (
+      <motion.p
+        data-subtitle
+        ref={typedEl}
+        {...getAnimate(5, { x: ["100px", "0px"] })}
+      ></motion.p>
+    ),
+    []
+  );
+
+  return (
+    <StyledCoverSection onMouseMove={handleMouseMove}>
+      <AnimatedBackground />
+
+      <StyledBlotterBox>
+        {JIcon}
+        {OIcon}
+        {YIcon}
+        {CIcon}
+        {EIcon}
+
+        {TypingText}
       </StyledBlotterBox>
 
       <StyledArrowBox>

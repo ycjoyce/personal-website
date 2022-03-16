@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledProjectsBox = styled.div``;
 
+StyledProjectsBox.displayName = "StyledProjectsBox";
+
 const StyledProjectSection = styled.section`
   & ${StyledProjectsBox} {
     &:not(:last-child) {
@@ -9,5 +11,7 @@ const StyledProjectSection = styled.section`
     }
   }
 `;
+
+StyledProjectSection.displayName = "StyledProjectSection";
 
 export default StyledProjectSection;

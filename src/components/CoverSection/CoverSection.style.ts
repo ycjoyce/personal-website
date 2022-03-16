@@ -24,6 +24,8 @@ export const StyledArrowBox = styled.div`
   }
 `;
 
+StyledArrowBox.displayName = "StyledCoverSectionArrowBox";
+
 const StyledCoverSection = styled.div`
   width: 100vw;
   height: 100vh;
@@ -45,6 +47,8 @@ const StyledCoverSection = styled.div`
     top: 0;
   }
 `;
+
+StyledCoverSection.displayName = "StyledCoverSection";
 
 export const StyledBlotterBox = styled.div`
   position: relative;
@@ -83,5 +87,7 @@ export const StyledBlotterBox = styled.div`
     right: -1rem;
   }
 `;
+
+StyledBlotterBox.displayName = "StyledCoverSection";
 
 export default StyledCoverSection;

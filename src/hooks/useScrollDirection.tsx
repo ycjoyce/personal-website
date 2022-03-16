@@ -1,34 +1,29 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 const useScrollDirection = () => {
-  const [y, setY] = useState(window.scrollY);
-  const [direction, setDirection] = useState<"up" | "down" | null>(null);
-
-  const handleNavigation = useCallback(
-    (e) => {
-      const { currentTarget } = e;
-      if (y > currentTarget.scrollY) {
-        setDirection("up");
-      } else if (y < currentTarget.scrollY) {
-        setDirection("down");
-      }
-      setY(currentTarget.scrollY);
-    },
-    [y]
-  );
+  const [direction, setDirection] = useState<"up" | "down" | "">("");
 
   useEffect(() => {
-    setY(window.scrollY);
-    window.addEventListener("scroll", handleNavigation);
+    function handleScroll() {
+      let y = window.scrollY;
+      return () => {
+        setDirection(y > window.scrollY ? "up" : "down");
+        y = window.scrollY;
+      };
+    }
+
+    const handler = handleScroll();
+
+    window.addEventListener("scroll", handler, {
+      passive: true,
+    });
 
     return () => {
-      window.removeEventListener("scroll", handleNavigation);
+      window.removeEventListener("scroll", handler);
     };
-  }, [handleNavigation]);
+  }, []);
 
-  return {
-    direction,
-  };
+  return { direction };
 };
 
 export default useScrollDirection;

@@ -41,4 +41,6 @@ const StyledTimeline = styled.ul`
   }}
 `;
 
+StyledTimeline.displayName = "StyledTimeline";
+
 export default StyledTimeline;

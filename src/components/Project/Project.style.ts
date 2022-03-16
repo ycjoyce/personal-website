@@ -23,6 +23,8 @@ export const StyledLinksBox = styled.div`
   }
 `;
 
+StyledLinksBox.displayName = "StyledProjectLinksBox";
+
 // 標題容器
 export const StyledTitleBox = styled.div`
   text-align: center;
@@ -43,6 +45,8 @@ export const StyledTitleBox = styled.div`
     text-align: center;
   }
 `;
+
+StyledTitleBox.displayName = "StyledProjectTitleBox";
 
 // 查看更多按鈕
 export const StyledViewMore = styled.div`
@@ -85,6 +89,8 @@ export const StyledViewMore = styled.div`
     opacity: 1;
   }
 `;
+
+StyledViewMore.displayName = "StyledProjectViewMore";
 
 // 圖片容器
 export const StyledImageBox = styled.div`
@@ -198,6 +204,8 @@ export const StyledImageBox = styled.div`
   
 `;
 
+StyledImageBox.displayName = "StyledProjectImageBox";
+
 // 文字內容容器
 export const StyledIntroBox = styled.div`
   flex: 0 0 400px;
@@ -222,6 +230,8 @@ export const StyledIntroBox = styled.div`
   }
 `;
 
+StyledIntroBox.displayName = "StyledProjectIntroBox";
+
 // 文字章節
 export const StyledParagraph = styled.p`
   margin: 0;
@@ -231,6 +241,8 @@ export const StyledParagraph = styled.p`
   }
 `;
 
+StyledParagraph.displayName = "StyledProjectParagraph";
+
 // 技能容器
 export const StyledSkillBox = styled.div`
   margin: -5px;
@@ -239,6 +251,8 @@ export const StyledSkillBox = styled.div`
     margin: 5px;
   }
 `;
+
+StyledSkillBox.displayName = "StyledProjectSkillBox";
 
 // 年份
 export const StyledYear = styled.div`
@@ -295,6 +309,8 @@ export const StyledYear = styled.div`
   }
 `;
 
+StyledYear.displayName = "StyledProjectYear";
+
 // 副標題
 export const StyledSubtitle = styled.p`
   [data-primary="true"] & {
@@ -314,6 +330,8 @@ export const StyledSubtitle = styled.p`
     }}
   }
 `;
+
+StyledSubtitle.displayName = "StyledProjectSubtitle";
 
 // 主要元件
 const StyledProject = styled.div<StyledProjectProps>`
@@ -365,5 +383,7 @@ const StyledProject = styled.div<StyledProjectProps>`
     }}
   }
 `;
+
+StyledProject.displayName = "StyledProject";
 
 export default StyledProject;

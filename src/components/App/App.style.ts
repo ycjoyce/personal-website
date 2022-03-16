@@ -18,6 +18,8 @@ export const StyledWrapper = styled.div`
   }}
 `;
 
+StyledWrapper.displayName = "StyledWrapper";
+
 const StyledApp = styled.div`
   & section {
     margin: 150px 0;
@@ -31,5 +33,7 @@ const StyledApp = styled.div`
     z-index: 100;
   }
 `;
+
+StyledApp.displayName = "StyledApp";
 
 export default StyledApp;

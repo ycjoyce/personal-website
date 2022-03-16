@@ -5,4 +5,6 @@ const StyledSkill = styled(StyledPill)`
   display: inline-block;
 `;
 
+StyledSkill.displayName = "StyledSkill";
+
 export default StyledSkill;

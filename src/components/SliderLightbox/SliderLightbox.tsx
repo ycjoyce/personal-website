@@ -10,6 +10,7 @@ import ThumbnailSlider from "../ThumbnailSlider/ThumbnailSlider";
 
 export interface LightboxProps extends ThumbnailSliderProps {
   root?: string;
+  show?: boolean;
   onClose?: () => void;
 }
 

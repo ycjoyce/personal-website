@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef } from "react";
+import React, { forwardRef, useMemo, useRef } from "react";
 import { Splide, SplideProps } from "@splidejs/react-splide";
 import VideoSlideItem, {
   VideoSlideItemProps,
@@ -42,6 +42,8 @@ const VideoSlider = forwardRef<Splide, VideoSliderProps>(
       videoRefs.current[index]?.play();
     };
 
+    const VideoItems = useMemo(() => renderItems(items), [items]);
+
     return (
       <Splide
         ref={ref}
@@ -51,7 +53,7 @@ const VideoSlider = forwardRef<Splide, VideoSliderProps>(
         }}
         onMove={handleMove}
       >
-        {renderItems(items)}
+        {VideoItems}
       </Splide>
     );
   }

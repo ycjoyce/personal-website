@@ -19,4 +19,6 @@ const StyledHamburger = styled.button<HamburgerProps>`
   }
 `;
 
+StyledHamburger.displayName = "StyledHamburger";
+
 export default StyledHamburger;

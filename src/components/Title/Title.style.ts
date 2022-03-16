@@ -18,4 +18,6 @@ const StyledTitle = styled.div<{
   }}
 `;
 
+StyledTitle.displayName = "StyledTitle";
+
 export default StyledTitle;

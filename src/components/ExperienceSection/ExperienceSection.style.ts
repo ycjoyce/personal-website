@@ -6,4 +6,6 @@ const StyledExperienceSection = styled.section`
   }
 `;
 
+StyledExperienceSection.displayName = "StyledExperienceSection";
+
 export default StyledExperienceSection;

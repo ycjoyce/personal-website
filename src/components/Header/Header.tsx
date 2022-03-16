@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useMemo } from "react";
 import theme from "../../styles/abstracts/theme";
 import Button from "../Button/Button";
 import Hamburger from "../Hamburger/Hamburger";
@@ -39,10 +39,16 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
       };
     };
 
+    const buttonAnimate = useMemo(() => getAnimate(0.8), []);
+
+    const hamburgerAnimate = useMemo(() => getAnimate(1), []);
+
+    const Icon = useMemo(() => <Blotter text="Jc" fontSize={40}></Blotter>, []);
+
     return (
       <StyledHeaderBox hide={hide} opened={menuOpened}>
         <StyledHeader ref={ref}>
-          <Blotter text="Jc" fontSize={40}></Blotter>
+          {Icon}
 
           <StyledOperateBox>
             <Button
@@ -50,7 +56,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
               size="sm"
               color={theme.color.primary}
               onClick={handleContact}
-              {...getAnimate(0.8)}
+              {...buttonAnimate}
             >
               Contact Me
             </Button>
@@ -61,7 +67,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
           opened={menuOpened}
           color={menuOpened ? "#fff" : theme.color.emphasize}
           onClick={onHamburgerClick}
-          {...getAnimate(1)}
+          {...hamburgerAnimate}
         />
 
         <Menu items={menu} opened={menuOpened} />

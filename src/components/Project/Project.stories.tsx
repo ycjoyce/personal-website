@@ -1,9 +1,15 @@
+import { ReactNode } from "react";
 import { Story } from "@storybook/react/types-6-0";
 import Project, { ProjectProps } from "./Project";
 
 export default {
   title: "Project",
   component: Project,
+  decorators: [
+    (story: () => ReactNode) => (
+      <div style={{ paddingTop: "100vh" }}>{story()}</div>
+    ),
+  ],
 };
 
 const Template: Story<ProjectProps> = (args) => <Project {...args} />;

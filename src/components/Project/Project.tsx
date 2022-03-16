@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import Button from "../Button/Button";
 import Skill, { SkillProps } from "../Skill/Skill";
 import Title from "../Title/Title";
@@ -16,7 +17,7 @@ import StyledProject, {
   StyledSubtitle,
 } from "./Project.style";
 import theme from "../../styles/abstracts/theme";
-import { motion } from "framer-motion";
+import isInView from "../../hooks/useInView";
 
 export interface ProjectProps {
   id: string;
@@ -45,6 +46,24 @@ const Project: FC<ProjectProps> = ({
   primary = false,
   onClick = () => {},
 }) => {
+  const ref = useRef<HTMLImageElement>(null);
+  const [imgSrc, setImgSrc] = useState<string>("https://fakeimg.pl/350x200");
+
+  useEffect(() => {
+    if (ref.current) {
+      isInView(ref.current, (entries, observer) => {
+        entries.forEach((e) => {
+          if (e.intersectionRatio > 0 && e.isIntersecting) {
+            if (imgSrc !== ref.current?.dataset.src) {
+              setImgSrc(ref.current?.dataset.src || "");
+              observer.disconnect();
+            }
+          }
+        });
+      });
+    }
+  }, [imgSrc]);
+
   const renderSkills = (skills: SkillProps["title"][]) => {
     return skills.map((skill, i) => (
       <Skill
@@ -86,77 +105,60 @@ const Project: FC<ProjectProps> = ({
     ));
   };
 
-  return (
+  const ParagrahBox = () => (
+    <div>
+      {intro.split("\n").map((e, i) => (
+        <StyledParagraph key={`${i}${e}`}>{e}</StyledParagraph>
+      ))}
+    </div>
+  );
+
+  const PrimaryProject = () => (
     <StyledProject
       data-year={year}
       data-more={more.length > 0}
       data-primary={primary}
     >
-      {primary && (
-        <StyledSubtitle
-          as={motion.p}
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: "all" }}
-          variants={{
-            offscreen: {
-              scale: 0,
+      <StyledSubtitle
+        as={motion.p}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: "all" }}
+        variants={{
+          offscreen: {
+            scale: 0,
+          },
+          onscreen: {
+            scale: 1,
+            transition: {
+              duration: 0.5,
             },
-            onscreen: {
-              scale: 1,
-              transition: {
-                duration: 0.5,
-              },
-            },
-          }}
-        >
-          {subtitle}
-        </StyledSubtitle>
-      )}
+          },
+        }}
+      >
+        {subtitle}
+      </StyledSubtitle>
 
-      {primary && <StyledYear>{year}</StyledYear>}
+      <StyledYear>{year}</StyledYear>
 
       <StyledImageBox>
         <img src={cover} alt={title} />
-
-        {!primary && (
-          <>
-            <StyledYear>{year}</StyledYear>
-
-            <StyledTitleBox>
-              <Title level={3} size={5}>
-                {title}
-              </Title>
-              {subtitle && <p>{subtitle}</p>}
-            </StyledTitleBox>
-
-            {more.length > 0 && (
-              <StyledViewMore onClick={handleClick}>View More</StyledViewMore>
-            )}
-          </>
-        )}
       </StyledImageBox>
 
       <StyledIntroBox>
-        {primary && (
-          <Title level={3} size={3}>
-            {title}
-          </Title>
-        )}
+        <Title level={3} size={3}>
+          {title}
+        </Title>
 
         <StyledLinksBox>
           {links.length > 0 && renderLinks(links)}
         </StyledLinksBox>
 
-        <div>
-          {intro.split("\n").map((e, i) => (
-            <StyledParagraph key={`${i}${e}`}>{e}</StyledParagraph>
-          ))}
-        </div>
+        <ParagrahBox />
 
         <StyledSkillBox>{renderSkills(skills)}</StyledSkillBox>
 
-        {primary && more.length > 0 && (
+        {more.length > 0 && (
           <Button color="#fff" outline onClick={handleClick}>
             View More
           </Button>
@@ -164,6 +166,43 @@ const Project: FC<ProjectProps> = ({
       </StyledIntroBox>
     </StyledProject>
   );
+
+  const DefaultProject = () => (
+    <StyledProject
+      data-year={year}
+      data-more={more.length > 0}
+      data-primary={primary}
+    >
+      <StyledImageBox>
+        <img ref={ref} src={imgSrc} data-src={cover} alt={title} />
+
+        <StyledYear>{year}</StyledYear>
+
+        <StyledTitleBox>
+          <Title level={3} size={5}>
+            {title}
+          </Title>
+          {subtitle && <p>{subtitle}</p>}
+        </StyledTitleBox>
+
+        {more.length > 0 && (
+          <StyledViewMore onClick={handleClick}>View More</StyledViewMore>
+        )}
+      </StyledImageBox>
+
+      <StyledIntroBox>
+        <StyledLinksBox>
+          {links.length > 0 && renderLinks(links)}
+        </StyledLinksBox>
+
+        <ParagrahBox />
+
+        <StyledSkillBox>{renderSkills(skills)}</StyledSkillBox>
+      </StyledIntroBox>
+    </StyledProject>
+  );
+
+  return primary ? <PrimaryProject /> : <DefaultProject />;
 };
 
 export default Project;

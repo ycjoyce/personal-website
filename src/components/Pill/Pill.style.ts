@@ -11,4 +11,6 @@ const StyledPill = styled.div<{ color: string }>`
   display: inline-block;
 `;
 
+StyledPill.displayName = "StyledPill";
+
 export default StyledPill;

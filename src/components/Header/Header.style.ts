@@ -29,6 +29,8 @@ const StyledHeader = styled.header`
   }}
 `;
 
+StyledHeader.displayName = "StyledHeader";
+
 export const StyledHeaderBox = styled.div<{ hide: boolean; opened: boolean }>`
   position: relative;
   height: ${headerHeight}px;
@@ -90,9 +92,13 @@ export const StyledHeaderBox = styled.div<{ hide: boolean; opened: boolean }>`
   }}
 `;
 
+StyledHeaderBox.displayName = "StyledHeaderBox";
+
 export const StyledOperateBox = styled.div`
   display: flex;
   align-items: center;
 `;
+
+StyledOperateBox.displayName = "StyledHeaderOperateBox";
 
 export default StyledHeader;

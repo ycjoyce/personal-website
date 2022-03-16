@@ -32,4 +32,6 @@ const StyledVideoSlideItem = styled.div<{ video: boolean }>`
     `}
 `;
 
+StyledVideoSlideItem.displayName = "StyledVideoSlideItem";
+
 export default StyledVideoSlideItem;
